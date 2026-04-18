@@ -1,0 +1,74 @@
+{
+  "title": "The Elder's Gift",
+  "slug": "elder-gift",
+  "age_tier": "rising_moons",
+  "age_range": "6-8",
+  "reading_time_minutes": 15,
+  "category": "character_building",
+  "source_reference": "Hadith: 'The best of you are those who have the best manners and character'",
+  "source_detail": "Al-Tirmidhi - Akhlaq (Good Character)",
+  "theme": "respect",
+  "description": "An elderly teacher gives the greatest gift: the wisdom of patience and understanding. Learn why experience and kindness matter.",
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "In a peaceful village surrounded by lush green fields, lived an elder named Zahra. She was wise and kind, known for her gentle ways. The children loved visiting her, always eager to learn from her stories.",
+      "illustration_prompt": "A vibrant village scene with lush green fields and children eagerly gathered around Zahra, an elderly woman with warm eyes and a gentle smile. The sky is a serene blue with fluffy white clouds."
+    },
+    {
+      "page_number": 2,
+      "text": "One sunny afternoon, a group of children sat in a circle as Zahra began her tale. 'Long ago, I learned that patience and understanding can change the world around us,' she started, her voice soothing like a gentle breeze.",
+      "illustration_prompt": "A close-up of Zahra, speaking with a gentle smile. The children sit around her, listening intently. The background is bathed in warm golden sunlight filtering through tall trees."
+    },
+    {
+      "page_number": 3,
+      "text": "Little Amina, curious and bright, asked, 'How can patience change anything?' Zahra chuckled softly, 'Ah, dear Amina, let me share a story of a time when patience was my greatest friend.'",
+      "illustration_prompt": "Amina, a little girl with big, curious eyes, looks up at Zahra with wonder. The scene is lively with colorful flowers in the background and birds gently flying overhead."
+    },
+    {
+      "page_number": 4,
+      "text": "Zahra spoke of her younger days, when she struggled to learn the craft of weaving. 'I wanted to quit many times,' she confessed, 'but each mistake taught me something new.'",
+      "illustration_prompt": "A flashback scene showing a younger Zahra struggling with a loom, threads tangled. Her expression is determined. The room is warmly lit with hints of sunset oranges and deep blues."
+    },
+    {
+      "page_number": 5,
+      "text": "'With each passing day, my patience grew, and so did my skill,' Zahra continued. 'I learned to weave beautiful carpets that told stories of our village.'",
+      "illustration_prompt": "Younger Zahra now expertly weaving a colorful carpet. The loom is surrounded by vibrant threads of all colors, and her face glows with satisfaction."
+    },
+    {
+      "page_number": 6,
+      "text": "Ali, a thoughtful boy, asked, 'Did you ever get angry?' Zahra nodded, 'Yes, Ali, but I learned that anger can blind us, while patience shows us the way forward.'",
+      "illustration_prompt": "Ali, a boy with thoughtful eyes, listens with interest. Zahra's expression is wise and understanding. The background is a blend of warm golds and soft pink hues."
+    },
+    {
+      "page_number": 7,
+      "text": "'One day, a traveler saw my carpets and marveled at them,' Zahra shared. 'He asked how I learned such skill, and I told him it was from embracing patience and understanding.'",
+      "illustration_prompt": "A traveler, silhouetted against a sunset sky, admires Zahra’s beautifully woven carpets. Zahra stands beside her work, proud yet humble."
+    },
+    {
+      "page_number": 8,
+      "text": "The children listened in awe, imagining the carpets that brought stories to life. Zahra smiled warmly, 'Patience helped me see beauty where others saw only threads.'",
+      "illustration_prompt": "Children imagining themselves surrounded by vivid, story-filled carpets. The scene is colorful and filled with a sense of magic and wonder."
+    },
+    {
+      "page_number": 9,
+      "text": "Little Sami, always playful, asked, 'Can patience help me learn to climb the tallest tree?' Zahra laughed gently, 'Yes, patience can help you reach any height, dear Sami.'",
+      "illustration_prompt": "Sami, a playful boy with a mischievous grin, looking at a tall tree with determination. Zahra is in the background, amused and supportive."
+    },
+    {
+      "page_number": 10,
+      "text": "'Remember, children,' Zahra advised, 'our Prophet taught that the best of us are those who have the best manners and character. Patience is part of that character.'",
+      "illustration_prompt": "An image of the children sitting around Zahra, with golden light filtering through tree branches, creating a warm, inviting atmosphere."
+    },
+    {
+      "page_number": 11,
+      "text": "As the sun began to set, the children thanked Zahra for her story, feeling inspired and calm. Zahra watched them leave with a heart full of hope and love.",
+      "illustration_prompt": "The children waving goodbye to Zahra as they walk down a path lined with colorful flowers. The sky is painted in shades of sunset oranges and pinks."
+    },
+    {
+      "page_number": 12,
+      "text": "That night, under a sky full of twinkling stars, the children dreamed of patience and understanding, their hearts warmed by Zahra’s gentle wisdom.",
+      "illustration_prompt": "A starry night sky over the peaceful village, with children asleep in their beds. The scene is calm, with deep blues and soft glows from the stars."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "title": "The Bird's Trust",
+  "slug": "bird-trust",
+  "age_tier": "rising_moons",
+  "age_range": "6-8",
+  "reading_time_minutes": 15,
+  "category": "quran_inspired",
+  "source_reference": "Quran 67:19",
+  "source_detail": "Do they not see the birds held up in the sky?",
+  "theme": "trust_in_allah",
+  "description": "A young bird learns to fly by watching how Allah sustains all creatures. A beautiful story about faith and letting go.",
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "In a lush, green forest, a little bird named Noura sat high in her nest. Her heart fluttered with excitement and a hint of fear as she watched her siblings take flight.",
+      "illustration_prompt": "A vibrant digital painting of a lush green forest with a small, brown nest on a tall tree. Noura, a tiny bird with big, expressive eyes, looks on with a mix of excitement and nervousness. Her siblings soar joyfully in the bright blue sky."
+    },
+    {
+      "page_number": 2,
+      "text": "Mama Bird perched beside her, whispering softly, \"Trust in Allah, dear Noura. Just as He holds the sky, He will hold you.\" Noura listened carefully, her heart filling with warmth.",
+      "illustration_prompt": "A close-up of Mama Bird, with gentle, wise eyes, leaning close to Noura. The background shows a golden sunbeam filtering through the leaves, creating a warm and magical atmosphere."
+    },
+    {
+      "page_number": 3,
+      "text": "As the sun began to set, painting the sky in warm oranges and pinks, Noura felt a new courage within her. She spread her wings and took a deep breath.",
+      "illustration_prompt": "A breathtaking sunset scene with a sky filled with warm oranges and soft pinks. Noura stands at the edge of the nest, wings slightly open, ready to take her first flight. The forest below is bathed in a soft, golden glow."
+    },
+    {
+      "page_number": 4,
+      "text": "With Mama Bird’s words in her heart, Noura leapt from the nest. For a moment, the world seemed to hold its breath as she soared through the sky.",
+      "illustration_prompt": "Noura in mid-flight, her wings outstretched, soaring against a backdrop of a deep blue sky with hints of the setting sun. Her eyes are wide with wonder, and the forest below appears small and lush."
+    },
+    {
+      "page_number": 5,
+      "text": "Fear turned to joy as she felt the air beneath her wings. \"This is amazing!\" she chirped, feeling lighter than a feather.",
+      "illustration_prompt": "Noura gliding effortlessly, a look of pure joy on her face. The sky is vast and blue, with soft pink clouds scattered around. The silhouette of the forest is visible below."
+    },
+    {
+      "page_number": 6,
+      "text": "As night fell, Noura returned to her nest, her heart full of gratitude. She nestled close to her family, feeling the gentle embrace of Allah’s love.",
+      "illustration_prompt": "The night sky is a deep blue with twinkling stars. Noura is cuddled up with her family in the nest, the forest illuminated by the soft glow of the moon. The scene is peaceful and comforting."
+    },
+    {
+      "page_number": 7,
+      "text": "\"Thank you, Mama,\" she whispered, \"for teaching me to trust.\" Mama Bird smiled, \"You have always had wings, my dear. You just needed to believe.\"",
+      "illustration_prompt": "A close-up of Noura and Mama Bird sharing a tender moment in the nest. The background is softly illuminated by moonlight, creating a serene and loving atmosphere."
+    },
+    {
+      "page_number": 8,
+      "text": "Noura closed her eyes, dreaming of new heights and adventures, knowing that she would never fly alone.",
+      "illustration_prompt": "Noura asleep, her wings gently folded, surrounded by her family. The night sky is visible through the leaves, with a crescent moon shining softly. The scene exudes warmth and security."
+    },
+    {
+      "page_number": 9,
+      "text": "She dreamt of clouds and stars, and how each one was a reminder of Allah’s protection.",
+      "illustration_prompt": "A dream-like scene with Noura flying among fluffy clouds and twinkling stars. The colors are soft and magical, with a sense of wonder and tranquility."
+    },
+    {
+      "page_number": 10,
+      "text": "As she drifted deeper into sleep, Noura knew that trusting in Allah would always guide her flights.",
+      "illustration_prompt": "Noura in a peaceful sleep, her family nestled around her. The illustration is serene, with a gentle glow of the moon casting a protective light over the nest."
+    }
+  ]
+}

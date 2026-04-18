@@ -1,0 +1,94 @@
+{
+  "title": "The Twin Butterflies",
+  "slug": "twin-butterflies",
+  "age_tier": "little_stars",
+  "age_range": "3-5",
+  "reading_time_minutes": 10,
+  "category": "daily_life",
+  "source_reference": "Quran 15:22",
+  "source_detail": "We send the winds to fertilize",
+  "theme": "unity",
+  "description": "Two butterfly siblings stay together through their adventure. A sweet bedtime tale about the power of brotherly and sisterly love.",
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "In a lush green meadow, two twin butterflies, Layla and Zayd, fluttered happily.",
+      "illustration_prompt": "A vibrant meadow with colorful flowers. Two butterflies, one with soft pink wings and one with warm gold wings, fluttering together joyfully."
+    },
+    {
+      "page_number": 2,
+      "text": "Layla and Zayd loved to dance with the gentle wind that whispered through the trees.",
+      "illustration_prompt": "The twin butterflies twirling in the air as a soft breeze rustles the leaves of tall trees. Warm sunlight filters through the branches."
+    },
+    {
+      "page_number": 3,
+      "text": "One day, the wind carried them far across the meadow to a new adventure.",
+      "illustration_prompt": "Layla and Zayd being carried by a gentle wind over a meadow filled with wildflowers, the horizon glowing with sunset colors."
+    },
+    {
+      "page_number": 4,
+      "text": "They saw a garden full of colorful blooms, each flower smiling up at them.",
+      "illustration_prompt": "A garden with a variety of vibrant flowers in full bloom. The butterflies hover above, casting playful shadows on the petals."
+    },
+    {
+      "page_number": 5,
+      "text": "The flowers welcomed them, offering sweet nectar to drink.",
+      "illustration_prompt": "Close-up of Layla and Zayd sipping nectar from the blossoms. The flowers are detailed with dewdrops glistening in soft morning light."
+    },
+    {
+      "page_number": 6,
+      "text": "As they drank, they heard the flowers whisper, 'Thank you for visiting us.'",
+      "illustration_prompt": "The butterflies perched on flowers, with imaginary soft, glowing lines representing whispers from the flowers reaching the butterflies."
+    },
+    {
+      "page_number": 7,
+      "text": "Feeling happy, Layla and Zayd danced once more, their wings shimmering.",
+      "illustration_prompt": "The butterflies twirl in a joyful dance, their wings catching the light in a magical display of colors against a deep blue sky."
+    },
+    {
+      "page_number": 8,
+      "text": "Together, they flew to a peaceful stream that glimmered in the sunlight.",
+      "illustration_prompt": "A tranquil stream surrounded by greenery with the butterflies resting on a rock at the edge, their reflections seen in the water."
+    },
+    {
+      "page_number": 9,
+      "text": "They rested by the stream, listening to the water's gentle lullaby.",
+      "illustration_prompt": "Layla and Zayd sitting peacefully beside the stream, their wings folded, as the water flows gently past them."
+    },
+    {
+      "page_number": 10,
+      "text": "The sun began to set, painting the sky in hues of orange and purple.",
+      "illustration_prompt": "A breathtaking sunset with vibrant oranges and purples, the twin butterflies silhouetted against the colorful sky."
+    },
+    {
+      "page_number": 11,
+      "text": "Layla said, 'Together, everything is an adventure, brother.'",
+      "illustration_prompt": "The butterflies close together, Layla's face gently turned towards Zayd, with a backdrop of the warm, glowing sunset."
+    },
+    {
+      "page_number": 12,
+      "text": "Zayd replied, 'Yes, sister, we are never alone.'",
+      "illustration_prompt": "A close-up of Zayd's expressive cartoon eyes looking warmly at Layla, framed by a backdrop of soft pink clouds."
+    },
+    {
+      "page_number": 13,
+      "text": "The stars began to twinkle above them, watching over their journey.",
+      "illustration_prompt": "A starry night sky with twinkling stars appearing, the butterflies resting on a flower with their wings folded gently."
+    },
+    {
+      "page_number": 14,
+      "text": "The moon smiled gently, lighting their way back home.",
+      "illustration_prompt": "A glowing moon casting a serene light over the meadow, illuminating the path for the twin butterflies."
+    },
+    {
+      "page_number": 15,
+      "text": "Layla and Zayd nestled into their cozy leaf bed, feeling safe and loved.",
+      "illustration_prompt": "The butterflies curled up on a large leaf, with soft light creating a warm, protective glow around them."
+    },
+    {
+      "page_number": 16,
+      "text": "As they drifted to sleep, they dreamed of new adventures together.",
+      "illustration_prompt": "The butterflies sleeping peacefully, surrounded by a dreamy aura, with soft hints of upcoming adventures in the background."
+    }
+  ]
+}

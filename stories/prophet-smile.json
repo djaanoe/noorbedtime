@@ -1,0 +1,94 @@
+{
+  "title": "The Prophet's Smile",
+  "slug": "prophet-smile",
+  "age_tier": "little_stars",
+  "age_range": "3-5",
+  "reading_time_minutes": 10,
+  "category": "prophet_story",
+  "source_reference": "Hadith: Abu Dharr reported the Prophet said 'Smiling at your brother is a charity'",
+  "source_detail": "Tirmidhi 1956 - Acts of kindness",
+  "theme": "kindness",
+  "description": "A simple smile from a kind man transforms everyone's day. Discover how small gestures of warmth create ripples of joy.",
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "In a warm and sunny village, everyone was busy with their day.",
+      "illustration_prompt": "A bright village scene with people bustling about, colorful stalls, and children playing under a blue sky. Lush greens and warm gold tones fill the scene."
+    },
+    {
+      "page_number": 2,
+      "text": "A kind man was walking through the village, smiling at everyone he passed.",
+      "illustration_prompt": "A radiant silhouette of a man walking through the village, surrounded by people. His smile is bright, and everyone around him looks happier. The scene is filled with warm colors."
+    },
+    {
+      "page_number": 3,
+      "text": "The baker felt happy and shared fresh bread with a smile too.",
+      "illustration_prompt": "A cheerful baker handing out loaves of bread to villagers, with a warm, golden glow highlighting his joyful expression. Freshly baked bread fills the scene with soft pinks and sunset oranges."
+    },
+    {
+      "page_number": 4,
+      "text": "The children giggled and played, their laughter like music.",
+      "illustration_prompt": "Children with big expressive eyes laughing and playing, surrounded by colorful flowers and butterflies. The scene is vibrant with deep blues and lush greens."
+    },
+    {
+      "page_number": 5,
+      "text": "A little bird chirped happily on a branch, joining in the fun.",
+      "illustration_prompt": "A small bird with vibrant feathers perched on a tree branch, singing joyfully. The backdrop is a magical, sunset-orange sky with soft pink clouds."
+    },
+    {
+      "page_number": 6,
+      "text": "The kind man continued his walk, his smile spreading joy.",
+      "illustration_prompt": "The radiant silhouette of the kind man walking along a path, surrounded by nature and happy villagers. The scene is warmly lit with an inviting, sunset glow."
+    },
+    {
+      "page_number": 7,
+      "text": "He saw a child who was sad, and gave him a gentle smile.",
+      "illustration_prompt": "A child with big eyes looking up at the kind man, whose face is not visible, but his body language is comforting. The scene is filled with soft, gentle colors."
+    },
+    {
+      "page_number": 8,
+      "text": "The child's face lit up, and he felt loved and happy.",
+      "illustration_prompt": "The child smiling brightly, surrounded by colorful flowers. The atmosphere is magical and inviting with warm, sunset hues."
+    },
+    {
+      "page_number": 9,
+      "text": "The child's happiness spread to his friends and family.",
+      "illustration_prompt": "A family and friends gathered around the child, all smiling and happy. The scene is vibrant, filled with lush greens and joyful expressions."
+    },
+    {
+      "page_number": 10,
+      "text": "Even the sun seemed to shine brighter, filling the day with warmth.",
+      "illustration_prompt": "A golden sun casting warm rays over the village, with deep blues and greens creating a magical atmosphere. The village looks peaceful and content."
+    },
+    {
+      "page_number": 11,
+      "text": "As the day ended, everyone felt the kindness in their hearts.",
+      "illustration_prompt": "Villagers sitting together, sharing stories and smiles as the sun sets. The sky is painted with soft pinks and sunset oranges."
+    },
+    {
+      "page_number": 12,
+      "text": "The kind man's smile had made the whole village happy.",
+      "illustration_prompt": "The village glowing under a starry night, with warm light coming from the houses. The man’s silhouette is seen walking away, leaving a trail of light."
+    },
+    {
+      "page_number": 13,
+      "text": "As he walked home, the stars twinkled, as if smiling back.",
+      "illustration_prompt": "A starry sky with twinkling stars over the village. The scene is serene with deep blues and a sense of nighttime calm."
+    },
+    {
+      "page_number": 14,
+      "text": "Everyone remembered his smile and felt grateful.",
+      "illustration_prompt": "The villagers in their homes, looking content and peaceful, under a night sky softly lit by the moon."
+    },
+    {
+      "page_number": 15,
+      "text": "The Prophet's smile was a gift, spreading kindness everywhere.",
+      "illustration_prompt": "A radiant silhouette of the Prophet surrounded by glowing light, symbolizing his kindness. The scene is filled with warmth and gentle colors."
+    },
+    {
+      "page_number": 16,
+      "text": "Goodnight, little one. May your dreams be filled with smiles.",
+      "illustration_prompt": "A peaceful, cozy bedroom scene where a child is tucked in bed, with a gentle smile. The window shows a serene night sky with soft, calming colors."
+    }
+  ]
+}

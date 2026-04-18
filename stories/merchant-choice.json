@@ -1,0 +1,44 @@
+{
+  "title": "The Merchant's Choice",
+  "slug": "merchant-choice",
+  "age_tier": "young_explorers",
+  "age_range": "9-12",
+  "reading_time_minutes": 20,
+  "category": "character_building",
+  "source_reference": "Quran 2:282",
+  "source_detail": "Verse about honesty in business transactions",
+  "theme": "honesty",
+  "description": "A merchant faces temptation to deceive for profit. Watch as he chooses integrity and discovers it's worth more than any treasure.",
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "Once upon a time, in a bustling bazaar nestled between rolling hills, lived a wise and respected merchant named Tariq. Known for his vibrant stall filled with spices and textiles, Tariq always greeted his customers with a warm smile.",
+      "illustration_prompt": "A colorful marketplace bustling with activity, showing Tariq's stall abundant with spices and textiles. Tariq is a kind-looking man with big expressive eyes, warmly interacting with customers. The background is filled with lush greens and warm golds, evoking a vibrant and inviting atmosphere."
+    },
+    {
+      "page_number": 2,
+      "text": "One day, a rare spice came into Tariq's possession. Its aroma was legendary, and its worth was equally high. As he prepared to sell it, a voice inside tempted him to raise the price beyond its value.",
+      "illustration_prompt": "Tariq holding a small pouch of rare spice, surrounded by a gentle, mysterious glow. His expression shows a moment of contemplation. The scene is set against deep blues, with curious onlookers in the background, creating an air of anticipation and wonder."
+    },
+    {
+      "page_number": 3,
+      "text": "As Tariq pondered, he remembered the teachings of honesty from the Holy Quran. He knew that true success was not measured in gold but in trust and integrity. The decision weighed heavily on his heart.",
+      "illustration_prompt": "A serene scene with Tariq sitting cross-legged, contemplating under an ancient tree. The leaves cast soft pink shadows around him. A radiant silhouette symbolizing divine guidance hovers gently in the background, bathed in golden light, to represent his reflection on Quranic teachings."
+    },
+    {
+      "page_number": 4,
+      "text": "With renewed clarity, Tariq decided to sell the spice at its correct value. His heart felt lighter, and as the day went on, customers thanked him for his fairness and kindness.",
+      "illustration_prompt": "Tariq smiling peacefully as he exchanges goods with grateful customers. The bazaar is alive with warm sunset oranges and lush greens. Customers of all ages, including children with expressive eyes, gather around, appreciating his integrity."
+    },
+    {
+      "page_number": 5,
+      "text": "News of Tariq's honesty spread throughout the town. People came from far and wide, eager to trade with a merchant they could trust. His reputation for fairness became his greatest treasure.",
+      "illustration_prompt": "A diverse crowd of townspeople and travelers approach Tariq's stall, their faces filled with admiration and trust. The scene is painted with vibrant colors, a mix of sunset oranges and deep blues, capturing the lively and heartfelt atmosphere."
+    },
+    {
+      "page_number": 6,
+      "text": "As the stars twinkled above the sleeping town, Tariq thanked Allah for guiding him. He knew that the wealth of the heart was far greater than any riches, and he drifted into a peaceful sleep.",
+      "illustration_prompt": "A tranquil nighttime scene with Tariq resting peacefully in his home. The window shows a sky sprinkled with stars, the room bathed in soft moonlight. The mood is calm and reflective, with soft pink hues and deep blues, concluding the story with warmth and serenity."
+    }
+  ]
+}

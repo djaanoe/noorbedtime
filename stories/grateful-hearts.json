@@ -1,0 +1,94 @@
+{
+  "title": "The Grateful Hearts",
+  "slug": "grateful-hearts",
+  "age_tier": "little_stars",
+  "age_range": "3-5",
+  "reading_time_minutes": 10,
+  "category": "character_building",
+  "source_reference": "Quran 31:12",
+  "source_detail": "Be grateful to Allah",
+  "theme": "gratitude",
+  "description": "Three siblings find simple joy in small blessings. A heartwarming tale about counting our gifts and saying thank you.",
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "Once upon a time, in a sunny village, lived three happy siblings: Amina, Omar, and little Sami.",
+      "illustration_prompt": "A vibrant village with lush green fields, a cozy cottage, and three siblings playing in the garden. The scene is filled with sunlight and colorful flowers, capturing a sense of joy and togetherness."
+    },
+    {
+      "page_number": 2,
+      "text": "One day, they sat under a big, shady tree, talking about their favorite things.",
+      "illustration_prompt": "The siblings sitting under a large, leafy tree with a rich green canopy. The background is a warm sunset with shades of orange and pink, creating a peaceful atmosphere."
+    },
+    {
+      "page_number": 3,
+      "text": "\"I love the sound of birds singing,\" Amina said, smiling at the sky.",
+      "illustration_prompt": "Amina looking up at the sky with a gentle smile, surrounded by birds with vibrant feathers. The sky is a clear blue with fluffy white clouds."
+    },
+    {
+      "page_number": 4,
+      "text": "\"I enjoy the smell of flowers,\" Omar added, touching a bright daisy.",
+      "illustration_prompt": "Omar gently holding a colorful daisy, his eyes wide with wonder. The garden is full of blooming flowers in various colors, enhancing the scene's warmth."
+    },
+    {
+      "page_number": 5,
+      "text": "\"I love the taste of sweet fruits,\" giggled Sami, munching an apple.",
+      "illustration_prompt": "Sami happily eating a shiny red apple, with a basket of assorted fruits beside him. The scene is filled with vibrant colors and textures, showing the abundance of nature."
+    },
+    {
+      "page_number": 6,
+      "text": "Mama joined them, noticing their joy. \"Remember,\" she said, \"always be grateful for these blessings.\"",
+      "illustration_prompt": "Mama gently speaking to the children, her face kind and loving. The background is the cozy cottage with the door open, inviting and warm."
+    },
+    {
+      "page_number": 7,
+      "text": "That evening, they gathered for supper, thankful for the warm food.",
+      "illustration_prompt": "The family sitting around a table filled with a simple, delicious meal. The room is warmly lit, with shadows dancing on the walls, creating a sense of comfort."
+    },
+    {
+      "page_number": 8,
+      "text": "Amina whispered, \"Thank you, Allah, for all that we have.\"",
+      "illustration_prompt": "Amina with her hands clasped in gratitude, her face peaceful. Radiant light from a candle illuminates her expression, adding a magical touch."
+    },
+    {
+      "page_number": 9,
+      "text": "\"Yes, thank you for the laughter and love,\" said Omar.",
+      "illustration_prompt": "Omar's face filled with contentment as he looks around at his family. The room is filled with a golden glow, emphasizing a feeling of warmth and love."
+    },
+    {
+      "page_number": 10,
+      "text": "Sami hugged his teddy bear, nodding with joy.",
+      "illustration_prompt": "Sami holding a cuddly teddy bear, his eyes sparkling with happiness. The background is a cozy, inviting bedroom with soft pastel colors."
+    },
+    {
+      "page_number": 11,
+      "text": "As bedtime came, they lay in their cozy beds, feeling safe and loved.",
+      "illustration_prompt": "The children tucked into their beds with soft blankets. The room is dimly lit with a nightlight, creating a serene and secure atmosphere."
+    },
+    {
+      "page_number": 12,
+      "text": "The night sky twinkled with stars, a gentle reminder of Allah's blessings.",
+      "illustration_prompt": "A night sky filled with twinkling stars and a glowing crescent moon, casting a soft light over the sleeping village."
+    },
+    {
+      "page_number": 13,
+      "text": "\"Goodnight, my darlings,\" Mama whispered, kissing their foreheads.",
+      "illustration_prompt": "Mama giving each child a goodnight kiss, her expression full of love. The scene is warm and intimate, capturing a moment of tenderness."
+    },
+    {
+      "page_number": 14,
+      "text": "The siblings dreamed of happy days and beautiful gifts from Allah.",
+      "illustration_prompt": "The children peacefully dreaming, surrounded by dream bubbles showing happy scenes of play, laughter, and nature."
+    },
+    {
+      "page_number": 15,
+      "text": "In their hearts, they knew, being grateful brings endless joy.",
+      "illustration_prompt": "A soft focus on each child, their faces serene in sleep, with a gentle aura of light around them, symbolizing inner peace and gratitude."
+    },
+    {
+      "page_number": 16,
+      "text": "And with grateful hearts, they drifted off into sweet dreams. Goodnight.",
+      "illustration_prompt": "The final scene shows the siblings asleep, silhouetted by the moonlight streaming through the window, creating a tranquil and loving atmosphere."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "title": "The Honest Fisherman",
+  "slug": "honest-fisherman",
+  "age_tier": "little_stars",
+  "age_range": "3-5",
+  "reading_time_minutes": 10,
+  "category": "character_building",
+  "source_reference": "Hadith: The Prophet said, 'The best of you are those who are best to their families, and I am the best among you'",
+  "source_detail": "Tirmidhi 3895 - Honesty and truthfulness",
+  "theme": "honesty",
+  "description": "A fisherman finds something precious in his nets. His choice to return it teaches us that honesty is worth more than anything.",
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "Once upon a time, by the sparkling sea, lived a kind fisherman named Ali.",
+      "illustration_prompt": "A peaceful seaside village with colorful boats. Ali, a friendly-looking man with a warm smile, stands by his boat, the sea shimmering under a soft morning light."
+    },
+    {
+      "page_number": 2,
+      "text": "Every day, Ali sailed his little boat and cast his nets into the deep blue sea.",
+      "illustration_prompt": "Ali on his boat, casting nets into the sea. The sun rises in the background, painting the sky in shades of pink and orange."
+    },
+    {
+      "page_number": 3,
+      "text": "One sunny morning, Ali found something shiny tangled in his nets.",
+      "illustration_prompt": "Ali looks surprised as he pulls a glistening object from his nets. The object sparkles in the sunlight with the sea glistening around."
+    },
+    {
+      "page_number": 4,
+      "text": "It was a beautiful golden necklace, gleaming brightly.",
+      "illustration_prompt": "A close-up of the golden necklace resting in Ali’s hands. The golden light reflects on his face, creating an atmosphere of wonder."
+    },
+    {
+      "page_number": 5,
+      "text": "Ali thought, 'This must belong to someone. I should return it.'",
+      "illustration_prompt": "Ali sits in his boat, looking thoughtful and determined. The sea surrounds him, calm and serene."
+    },
+    {
+      "page_number": 6,
+      "text": "He sailed back to the village, ready to find the owner.",
+      "illustration_prompt": "Ali's boat sails toward the village, where colorful houses line the shore. The sun casts a golden glow on everything."
+    },
+    {
+      "page_number": 7,
+      "text": "Ali asked his neighbors, 'Did anyone lose a golden necklace?'",
+      "illustration_prompt": "Ali stands in the village square, talking to cheerful villagers. The scene is lively with children playing nearby."
+    },
+    {
+      "page_number": 8,
+      "text": "A worried lady came forward. 'I lost it!' she said with relief.",
+      "illustration_prompt": "A relieved woman with kind eyes and colorful clothing speaks to Ali. The village is bustling around them."
+    },
+    {
+      "page_number": 9,
+      "text": "Ali smiled, 'Here it is. I'm glad I found you.'",
+      "illustration_prompt": "Ali hands the golden necklace to the lady, both smiling warmly. The sun creates a halo effect around them."
+    },
+    {
+      "page_number": 10,
+      "text": "The lady thanked Ali, 'You're so honest!'",
+      "illustration_prompt": "The lady and Ali shake hands joyfully. Villagers around them smile, appreciating the moment of kindness."
+    },
+    {
+      "page_number": 11,
+      "text": "Ali felt happy. Being honest made him feel good inside.",
+      "illustration_prompt": "Ali walks home, feeling content. The village path is lined with flowers, and the sky is a soft blue."
+    },
+    {
+      "page_number": 12,
+      "text": "Every day, Ali continued to fish, always honest and true.",
+      "illustration_prompt": "Ali back on his boat, casting nets with a joyful smile. The sea is calm under a golden afternoon sun."
+    },
+    {
+      "page_number": 13,
+      "text": "The villagers loved Ali for his honesty and kindness.",
+      "illustration_prompt": "A scene of the village. Ali sits with children around him, telling stories. The atmosphere is warm and inviting."
+    },
+    {
+      "page_number": 14,
+      "text": "Ali knew honesty was more precious than any treasure.",
+      "illustration_prompt": "Ali reflects by the sea, watching the waves gently lap the shore. The sunset paints the sky in brilliant hues."
+    },
+    {
+      "page_number": 15,
+      "text": "As the sun set, Ali whispered a prayer of gratitude.",
+      "illustration_prompt": "Ali kneels in prayer by the sea, a radiant silhouette against the vibrant colors of the sunset."
+    },
+    {
+      "page_number": 16,
+      "text": "Good night, little ones. Be honest like Ali, and sleep peacefully.",
+      "illustration_prompt": "A cozy bedroom scene with a child tucked in bed, holding a small boat toy. The room is softly lit, filled with warmth and love."
+    }
+  ]
+}

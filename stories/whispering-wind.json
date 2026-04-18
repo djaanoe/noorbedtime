@@ -1,0 +1,94 @@
+{
+  "title": "The Whispering Wind",
+  "slug": "whispering-wind",
+  "age_tier": "little_stars",
+  "age_range": "3-5",
+  "reading_time_minutes": 10,
+  "category": "quran_inspired",
+  "source_reference": "Quran 21:45",
+  "source_detail": "Reference to the wind carrying messages",
+  "theme": "wonder",
+  "description": "The wind carries secrets and stories to those who listen. A dreamy bedtime tale about nature's gentle messages.",
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "Once upon a time, in a lush green meadow, a gentle wind began to whisper.",
+      "illustration_prompt": "Illustrate a vibrant green meadow with colorful flowers swaying gently. The wind is depicted as soft, swirling lines of light."
+    },
+    {
+      "page_number": 2,
+      "text": "Little Amal, with big curious eyes, listened closely. The wind had stories to tell.",
+      "illustration_prompt": "Show a young girl with big, expressive eyes, sitting in the meadow, looking up eagerly as the wind swirls around her."
+    },
+    {
+      "page_number": 3,
+      "text": "It spoke of faraway lands and twinkling stars in the night sky.",
+      "illustration_prompt": "Depict a dreamy scene of distant landscapes, with stars twinkling in a deep blue sky, as if carried on the wind's whispers."
+    },
+    {
+      "page_number": 4,
+      "text": "The wind said, 'I carry messages from the leaves and the skies.'",
+      "illustration_prompt": "Illustrate leaves gently rustling, carried by the wind, against a backdrop of a vast, golden sky."
+    },
+    {
+      "page_number": 5,
+      "text": "Amal closed her eyes and felt the wonder of nature's secrets.",
+      "illustration_prompt": "Show Amal with her eyes gently closed, a serene smile on her face, surrounded by soft, pink blossoms."
+    },
+    {
+      "page_number": 6,
+      "text": "A butterfly landed on her hand, as if to share in the tales.",
+      "illustration_prompt": "Portray a delicate butterfly with vibrant colors resting on Amal's hand with the meadow as the backdrop."
+    },
+    {
+      "page_number": 7,
+      "text": "'Even the smallest creatures have stories,' the wind whispered.",
+      "illustration_prompt": "Illustrate a variety of small creatures like ants and ladybugs, each animated with character, listening to the wind."
+    },
+    {
+      "page_number": 8,
+      "text": "Amal giggled, feeling the wind tickle her cheeks.",
+      "illustration_prompt": "Show Amal joyfully laughing as the wind playfully swirls around her, making her hair dance in the breeze."
+    },
+    {
+      "page_number": 9,
+      "text": "The sun began to set, painting the sky in warm oranges and pinks.",
+      "illustration_prompt": "Depict a breathtaking sunset with deep oranges and soft pinks, casting a warm glow over the meadow and Amal."
+    },
+    {
+      "page_number": 10,
+      "text": "'Goodnight, little one,' the wind sang softly.",
+      "illustration_prompt": "Illustrate the wind as gentle waves of light, serenading the landscape as it begins to darken with the coming night."
+    },
+    {
+      "page_number": 11,
+      "text": "Amal waved goodbye to the wind, feeling peaceful and loved.",
+      "illustration_prompt": "Show Amal waving to the horizon, a content smile on her face, as the wind caresses her softly."
+    },
+    {
+      "page_number": 12,
+      "text": "She knew the wind would return with more wonders tomorrow.",
+      "illustration_prompt": "Illustrate a hopeful dawn scene with the first light peeking over the horizon, hinting at new adventures."
+    },
+    {
+      "page_number": 13,
+      "text": "With a yawn, Amal snuggled into her cozy bed.",
+      "illustration_prompt": "Show Amal tucked into a comfy bed with soft blankets and a serene look of contentment on her face."
+    },
+    {
+      "page_number": 14,
+      "text": "She whispered a quiet 'thank you' to the wind and the stars.",
+      "illustration_prompt": "Depict a view from the window showing twinkling stars, as if listening to Amal's gratitude."
+    },
+    {
+      "page_number": 15,
+      "text": "The room was filled with a warm glow, like a hug from the night.",
+      "illustration_prompt": "Illustrate a cozy room bathed in a soft, warm golden light, creating a sense of safety and comfort."
+    },
+    {
+      "page_number": 16,
+      "text": "And with that, Amal drifted to sleep, dreaming of whispers and wonders.",
+      "illustration_prompt": "Show Amal peacefully asleep, a gentle smile on her face, as the dream-like whispers of the wind surround her in soft hues."
+    }
+  ]
+}

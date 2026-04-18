@@ -1,0 +1,94 @@
+{
+  "title": "The River's Song",
+  "slug": "river-song",
+  "age_tier": "little_stars",
+  "age_range": "3-5",
+  "reading_time_minutes": 10,
+  "category": "quran_inspired",
+  "source_reference": "Quran 47:15",
+  "source_detail": "Description of rivers in Paradise",
+  "theme": "peace",
+  "description": "A gentle river flows and sings, bringing life and sustenance to all. A soothing bedtime tale about the beauty of flowing with purpose.",
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "Once upon a time, in a land of dreams, a gentle river flowed. It sang a song of peace and love.",
+      "illustration_prompt": "A serene river begins its journey. Lush green banks with flowers bending over the water, listening to the river’s song. The background is a vibrant mix of blues and greens."
+    },
+    {
+      "page_number": 2,
+      "text": "The river sparkled under the warm sun, its waters clear and pure. It whispered secrets to the trees.",
+      "illustration_prompt": "Sunlight dancing on the river's surface, creating sparkles. Tall trees with expressive faces lean in, listening. The palette is warm golds and lush greens."
+    },
+    {
+      "page_number": 3,
+      "text": "Birds fluttered above, chirping along. They loved the river’s song and felt happy and free.",
+      "illustration_prompt": "Brightly colored birds with big, cartoon eyes flying over the river, wings spread wide. The sky is a deep, inviting blue."
+    },
+    {
+      "page_number": 4,
+      "text": "In the river lived fish, playful and swift. They enjoyed the cool, gentle currents.",
+      "illustration_prompt": "Playful fish swimming joyfully in the clear water, with sunlight filtering through. The riverbed is sandy with a few pebbles, adding texture."
+    },
+    {
+      "page_number": 5,
+      "text": "Nearby, a little deer drank from the river. It felt calm and safe, knowing the river was a friend.",
+      "illustration_prompt": "A gentle deer with large, soft eyes drinking from the river. The setting sun casts a warm orange glow."
+    },
+    {
+      "page_number": 6,
+      "text": "The river flowed past gardens filled with fruit. Trees offered their bounty with joy.",
+      "illustration_prompt": "Fruit trees with branches heavy with colorful fruits lining the river. The river reflects the vibrant colors of the fruit."
+    },
+    {
+      "page_number": 7,
+      "text": "A kind farmer watered his plants with river water. Everything he grew was healthy and strong.",
+      "illustration_prompt": "A cheerful farmer watering his garden, the plants bright and flourishing. The river sparkles nearby, under a soft pink sky."
+    },
+    {
+      "page_number": 8,
+      "text": "As the river continued, it reached a meadow where children played and laughed.",
+      "illustration_prompt": "Children with happy faces and cartoon eyes playing near the river, surrounded by tall grass and colorful wildflowers."
+    },
+    {
+      "page_number": 9,
+      "text": "The river sang its gentle song, bringing joy and peace to everyone.",
+      "illustration_prompt": "The river flowing gently through the meadow, casting reflections of the sky. The colors are deep blues and soft pinks."
+    },
+    {
+      "page_number": 10,
+      "text": "As night fell, the stars twinkled above. The river shimmered like silver.",
+      "illustration_prompt": "A nighttime scene with stars reflected in the river, which shines with a silvery hue. The sky is a deep, rich blue."
+    },
+    {
+      "page_number": 11,
+      "text": "Nearby, a wise owl watched from a tree. It listened to the river's song, feeling at peace.",
+      "illustration_prompt": "An owl with large, wise eyes perched on a branch, silhouetted against the starlit sky. The river glows softly below."
+    },
+    {
+      "page_number": 12,
+      "text": "The river flowed with purpose, bringing life to all it touched. It never stopped.",
+      "illustration_prompt": "The river winding through the landscape, touching various elements of nature. The colors are vibrant and harmonious."
+    },
+    {
+      "page_number": 13,
+      "text": "Its song was a lullaby, soothing and warm. It reminded everyone of the beauty of peace.",
+      "illustration_prompt": "The river with musical notes floating above, symbolizing its song. The scene is imbued with a warm, inviting glow."
+    },
+    {
+      "page_number": 14,
+      "text": "In their dreams, children saw the river. They felt loved and safe.",
+      "illustration_prompt": "Children sleeping peacefully with dreamy smiles, the river’s image gently flowing through their dreams. The room is cozy and softly lit."
+    },
+    {
+      "page_number": 15,
+      "text": "The river's song whispered goodnight, filling hearts with tranquility and joy.",
+      "illustration_prompt": "A tranquil scene of the river under a moonlit sky, with a gentle breeze creating ripples. The mood is calm and serene."
+    },
+    {
+      "page_number": 16,
+      "text": "Sleep now, little ones. The river will always sing, bringing peace to your dreams.",
+      "illustration_prompt": "A final, peaceful scene where the river flows quietly under a starlit sky. The atmosphere is one of comfort and warmth."
+    }
+  ]
+}

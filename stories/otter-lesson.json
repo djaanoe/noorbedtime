@@ -1,0 +1,94 @@
+{
+  "title": "The Otter's Lesson",
+  "slug": "otter-lesson",
+  "age_tier": "little_stars",
+  "age_range": "3-5",
+  "reading_time_minutes": 10,
+  "category": "daily_life",
+  "source_reference": "Islamic teachings on the importance of cleanliness (tahara)",
+  "source_detail": "Hadith about cleanliness as part of faith",
+  "theme": "discipline",
+  "description": "A little otter learns the joy of being clean and fresh. A playful story about self-care and the importance of staying pure.",
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "Once upon a time, in a lush green forest by a sparkling stream, lived a little otter named Omar.",
+      "illustration_prompt": "A vibrant forest scene with a playful otter, Omar, beside a sparkling stream. The forest is lush with greenery and colorful flowers."
+    },
+    {
+      "page_number": 2,
+      "text": "Omar loved to play in the mud all day. He would roll around and giggle with his friends.",
+      "illustration_prompt": "Omar the otter rolling in the mud with other otter friends, all looking happy. The mud is rich brown, contrasting with the otters' shiny fur."
+    },
+    {
+      "page_number": 3,
+      "text": "One day, his mother said, 'Omar, it's time to wash up. Cleanliness is part of faith.'",
+      "illustration_prompt": "Omar’s mother, an older otter with a gentle smile, speaking to Omar. The background is a calm part of the stream, glistening under the sun."
+    },
+    {
+      "page_number": 4,
+      "text": "Omar didn't want to stop playing, but he loved his mother. So, he waddled to the stream.",
+      "illustration_prompt": "Omar looking a bit reluctant but obedient, walking towards the stream. The sunlight creates sparkles on the water surface."
+    },
+    {
+      "page_number": 5,
+      "text": "The water was cool and refreshing. Omar splashed and cleaned himself, feeling lighter.",
+      "illustration_prompt": "Omar joyfully splashing water on himself, looking refreshed. Water droplets catch the sunlight, creating tiny rainbows."
+    },
+    {
+      "page_number": 6,
+      "text": "As he washed, he noticed how his fur shone and smelled fresh like flowers.",
+      "illustration_prompt": "Close-up of Omar’s fur glistening in the sunlight, with flowers in the background, depicting freshness and cleanliness."
+    },
+    {
+      "page_number": 7,
+      "text": "His friends joined him, and they played in the clean water, laughing happily.",
+      "illustration_prompt": "Omar and his otter friends playing joyfully in the clear stream, splashing water with big smiles. The scene is lively and joyful."
+    },
+    {
+      "page_number": 8,
+      "text": "After they finished, they lay on the soft grass, feeling calm and content.",
+      "illustration_prompt": "Omar and his friends lying on vibrant green grass, under a soft blue sky, looking peaceful and content."
+    },
+    {
+      "page_number": 9,
+      "text": "Omar realized how wonderful it felt to be clean. He smiled at his mother.",
+      "illustration_prompt": "Omar looking up at his mother with a big smile, surrounded by flowers and greenery, in a warm, nurturing scene."
+    },
+    {
+      "page_number": 10,
+      "text": "'Being clean is truly part of faith,' Omar thought, feeling proud.",
+      "illustration_prompt": "A thoughtful Omar with his eyes closed in reflection, a soft glow around him, highlighting his sense of pride and understanding."
+    },
+    {
+      "page_number": 11,
+      "text": "From that day on, Omar washed every day, enjoying his clean fur.",
+      "illustration_prompt": "Omar in the stream washing himself, looking joyful and refreshed, with the stream flowing happily around him."
+    },
+    {
+      "page_number": 12,
+      "text": "He loved how his fur shimmered in the sun, feeling fresh and happy.",
+      "illustration_prompt": "Omar sitting by the stream, his fur shimmering in the sunlight, surrounded by colorful nature."
+    },
+    {
+      "page_number": 13,
+      "text": "Mama Otter was proud. 'You are a clean and wonderful otter, Omar,' she said.",
+      "illustration_prompt": "Mama Otter with a loving expression, looking at Omar. The scene is warm and full of affection, with soft colors."
+    },
+    {
+      "page_number": 14,
+      "text": "Omar felt loved and happy with his clean fur and pure heart.",
+      "illustration_prompt": "Omar sitting happily with his friends and family, a serene forest scene surrounding them, full of love and warmth."
+    },
+    {
+      "page_number": 15,
+      "text": "He closed his eyes, ready to dream of more playful, clean days.",
+      "illustration_prompt": "Omar, with his eyes gently closed, surrounded by a magical forest landscape, ready for peaceful dreams."
+    },
+    {
+      "page_number": 16,
+      "text": "Goodnight, dear Omar. Sweet dreams until the sun rises again.",
+      "illustration_prompt": "A night-time scene with Omar sleeping peacefully under a starlit sky, the stream softly reflecting the moonlight."
+    }
+  ]
+}

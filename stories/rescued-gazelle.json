@@ -1,0 +1,49 @@
+{
+  "title": "The Rescued Gazelle",
+  "slug": "rescued-gazelle",
+  "age_tier": "rising_moons",
+  "age_range": "6-8",
+  "reading_time_minutes": 15,
+  "category": "islamic_history",
+  "source_reference": "References to hunting practices and animal treatment in Islamic texts",
+  "source_detail": "Islamic teachings on compassion toward animals",
+  "theme": "compassion",
+  "description": "A hunter's son saves a gazelle from a trap. Watch as he learns that sometimes the noblest choice is to let the hunted go free.",
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "In a sunlit valley surrounded by lush trees and golden fields, young Omar walked beside his father, the hunter. His heart filled with curiosity about the world he was to explore.",
+      "illustration_prompt": "A bright, sunlit valley with lush green trees and golden fields. Omar, a young boy with big expressive eyes, walks beside his father, who is carrying a bow. Birds flutter overhead, and the sky is a soft pink and blue."
+    },
+    {
+      "page_number": 2,
+      "text": "\"Look closely, Omar,\" his father said. \"Hunting is not just about skill, but respect for Allah's creatures.\" Omar nodded, eager to learn the lessons his father offered.",
+      "illustration_prompt": "Omar's father, a tall silhouette bathed in golden light, gestures towards the horizon. Omar looks up with attentive eyes, listening intently. The scene is set in a warm, glowing landscape."
+    },
+    {
+      "page_number": 3,
+      "text": "As they walked, Omar heard a soft cry. He followed the sound and discovered a gazelle caught in a trap, its eyes wide with fear.",
+      "illustration_prompt": "A trapped gazelle with gentle eyes looking up pleadingly. Omar kneels beside it, his expression a mix of concern and determination. The surrounding forest is alive with vibrant colors, creating a sense of urgency and empathy."
+    },
+    {
+      "page_number": 4,
+      "text": "\"Father! We must help,\" Omar pleaded. His father paused, understanding the compassion in his son’s heart. \"Yes, my son. Helping those in need is a noble act.\"",
+      "illustration_prompt": "Omar turning to his father, who nods with a soft smile. The gazelle waits, its ears perked up. The scene is filled with warm tones, highlighting the bond between father and son."
+    },
+    {
+      "page_number": 5,
+      "text": "Gently, they freed the gazelle. It stood shakily, then leapt into the safety of the forest. Omar felt a warmth in his heart, knowing he had done a good deed.",
+      "illustration_prompt": "The gazelle leaping joyfully into the vibrant green forest, leaving Omar and his father behind. Sunlight filters through the leaves, casting a magical glow on the scene."
+    },
+    {
+      "page_number": 6,
+      "text": "\"Remember, Omar,\" his father said, \"Kindness to animals is a sign of faith.\" Omar smiled, feeling the truth of his father's words in his heart.",
+      "illustration_prompt": "Omar and his father stand side by side, watching the forest. Omar smiles up at his father, who is silhouetted against the colorful sunset. The environment is filled with warm, enveloping light."
+    },
+    {
+      "page_number": 7,
+      "text": "As night fell, they returned home. Omar lay in bed, the memory of the gazelle's freedom guiding him to peaceful dreams.",
+      "illustration_prompt": "Omar snuggled in his bed, a serene smile on his face. The room is softly lit by moonlight streaming through the window, casting a gentle glow. A small, peaceful night scene of the forest is visible through the window."
+    }
+  ]
+}

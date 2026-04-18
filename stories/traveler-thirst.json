@@ -1,0 +1,54 @@
+{
+  "title": "The Traveler's Thirst",
+  "slug": "traveler-thirst",
+  "age_tier": "rising_moons",
+  "age_range": "6-8",
+  "reading_time_minutes": 15,
+  "category": "character_building",
+  "source_reference": "Hadith: Abu Huraira reported the Prophet said, 'Whoever gives a drink to a thirsty person'",
+  "source_detail": "Sunan Ibn Majah 4193 - Reward for giving water",
+  "theme": "generosity",
+  "description": "A traveler is desperately thirsty when a child offers water. This simple act of kindness ripples through the community in unexpected ways.",
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "In the warmth of a golden afternoon, a lone traveler wandered through a small village. His throat was dry, and his steps were weary. He paused under a lush mango tree, hoping for relief.",
+      "illustration_prompt": "A vibrant scene of a traveler resting under a mango tree with a small village in the background, the sun casting warm golden hues everywhere."
+    },
+    {
+      "page_number": 2,
+      "text": "Nearby, a young boy named Yusuf noticed the traveler. His heart filled with compassion. 'Are you thirsty, sir?' he asked, holding up a small clay cup filled with water.",
+      "illustration_prompt": "Yusuf, a cheerful boy with big expressive eyes, offering a cup of water to the tired traveler. The setting is a village path lined with colorful flowers."
+    },
+    {
+      "page_number": 3,
+      "text": "The traveler smiled gratefully, accepting the water. 'Thank you, young one,' he said, his voice now more vibrant. 'May Allah bless your kind heart.'",
+      "illustration_prompt": "The traveler, now refreshed, smiles warmly at Yusuf. The backdrop is a field with soft pink wildflowers and a gentle breeze."
+    },
+    {
+      "page_number": 4,
+      "text": "Yusuf's simple act of kindness did not go unnoticed. Villagers who saw the exchange felt inspired. They began sharing what they could with others. Generosity spread like rays of the setting sun.",
+      "illustration_prompt": "Villagers exchanging gifts and smiles, bathed in the warm light of a setting sun. A communal atmosphere filled with laughter and joy."
+    },
+    {
+      "page_number": 5,
+      "text": "In the evening, Yusuf's father spoke to him. 'Your kindness has brought happiness to many today,' he said. 'You are a beacon of light in our village.'",
+      "illustration_prompt": "Yusuf with his father, sitting on a porch under a sky painted with deep blues and twinkling stars. The village is peaceful and serene."
+    },
+    {
+      "page_number": 6,
+      "text": "As night fell, Yusuf lay in his bed, the stars twinkling like diamonds above. He felt a warmth in his heart, knowing he had made a difference.",
+      "illustration_prompt": "Yusuf gazing out his bedroom window at a starry night sky. The room is cozy with soft colors, a gentle glow from a bedside lamp."
+    },
+    {
+      "page_number": 7,
+      "text": "'Thank you, Allah, for letting me help today,' he whispered, closing his eyes. The night embraced him like a soft, comforting blanket.",
+      "illustration_prompt": "Yusuf peacefully asleep, a gentle smile on his face. The room is filled with a calm energy, the moon casting a gentle light through the window."
+    },
+    {
+      "page_number": 8,
+      "text": "And so, the village slept under the care of the generous moon, wrapped in the warmth of kindness and dreams of a better tomorrow.",
+      "illustration_prompt": "A panoramic view of the village at night, under a luminous moon. The homes are softly lit, surrounded by lush greenery and a peaceful ambiance."
+    }
+  ]
+}
