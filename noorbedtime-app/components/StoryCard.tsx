@@ -43,7 +43,7 @@ export default function StoryCard({ story }: Props) {
           src={illustrationUrl}
           alt={story.title}
           fill
-          className="object-cover"
+          className="object-cover object-top"
         />
       </div>
       <div className="p-3">
