@@ -4,7 +4,8 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { getAllStories, getStoryBySlug, AGE_TIER_LABELS, AGE_TIER_RANGES } from "@/lib/stories";
+import StoryCard from "@/components/StoryCard";
+import { getAllStories, getStoryBySlug, getStoriesByTheme, AGE_TIER_LABELS, AGE_TIER_RANGES, themeToSlug, themeToLabel } from "@/lib/stories";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -38,6 +39,11 @@ export default async function StoryPage({ params }: Props) {
   if (!story) notFound();
 
   const previewPages = story.pages.slice(0, 2);
+  const ageUrl = AGE_TIER_RANGES[story.age_tier].replace("Ages ", "");
+  const themeSlug = themeToSlug(story.theme);
+  const relatedStories = getStoriesByTheme(themeSlug)
+    .filter((s) => s.slug !== slug)
+    .slice(0, 4);
 
   const schema = [
     {
@@ -100,12 +106,12 @@ export default async function StoryPage({ params }: Props) {
             {/* Info */}
             <div>
               <div className="flex flex-wrap gap-2 mb-3">
-                <span className="bg-gold/20 text-gold text-xs font-bold px-3 py-1 rounded-full">
+                <Link href={`/ages/${ageUrl}`} className="bg-gold/20 text-gold text-xs font-bold px-3 py-1 rounded-full hover:bg-gold/30 transition-colors">
                   {AGE_TIER_LABELS[story.age_tier]}
-                </span>
-                <span className="bg-navy-lighter text-gray-400 text-xs px-3 py-1 rounded-full border border-gray-700">
+                </Link>
+                <Link href={`/ages/${ageUrl}`} className="bg-navy-lighter text-gray-400 text-xs px-3 py-1 rounded-full border border-gray-700 hover:border-gold/40 hover:text-gray-200 transition-colors">
                   {AGE_TIER_RANGES[story.age_tier]}
-                </span>
+                </Link>
                 <span className="bg-navy-lighter text-gray-400 text-xs px-3 py-1 rounded-full border border-gray-700">
                   {story.reading_time_minutes} min read
                 </span>
@@ -150,7 +156,11 @@ export default async function StoryPage({ params }: Props) {
               </div>
 
               <div className="flex items-center gap-2 text-xs text-gray-500">
-                <span>Theme: <span className="text-gray-300 capitalize">{story.theme}</span></span>
+                <span>Theme:{" "}
+                  <Link href={`/themes/${themeSlug}`} className="text-gray-300 capitalize hover:text-gold transition-colors">
+                    {themeToLabel(story.theme)}
+                  </Link>
+                </span>
                 <span>·</span>
                 <span>{story.pages.length} pages</span>
               </div>
@@ -194,6 +204,27 @@ export default async function StoryPage({ params }: Props) {
               </div>
             )}
           </div>
+          {/* Related stories */}
+          {relatedStories.length > 0 && (
+            <div className="mt-12">
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-lg font-bold" style={{ fontFamily: "Outfit, sans-serif" }}>
+                  More stories about{" "}
+                  <Link href={`/themes/${themeSlug}`} className="text-gold hover:underline">
+                    {themeToLabel(story.theme)}
+                  </Link>
+                </h2>
+                <Link href={`/themes/${themeSlug}`} className="text-xs text-gold/70 hover:text-gold transition-colors">
+                  See all →
+                </Link>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                {relatedStories.map((s) => (
+                  <StoryCard key={s.slug} story={s} />
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </main>
       <Footer />

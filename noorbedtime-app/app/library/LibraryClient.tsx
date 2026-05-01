@@ -1,9 +1,15 @@
 "use client";
 import { useState, useMemo } from "react";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StoryCard from "@/components/StoryCard";
 import { Story } from "@/types";
+
+function themeToSlug(theme: string) { return theme.replace(/_/g, "-"); }
+function themeToLabel(theme: string) {
+  return theme.replace(/[_-]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
 
 interface Props {
   stories: Story[];
@@ -19,6 +25,10 @@ const TIERS = [
 export default function LibraryClient({ stories }: Props) {
   const [activeTier, setActiveTier] = useState("all");
   const [search, setSearch] = useState("");
+  const themes = useMemo(
+    () => Array.from(new Set(stories.map((s) => s.theme))).sort(),
+    [stories]
+  );
 
   const filtered = useMemo(() => {
     return stories.filter((s) => {
@@ -45,6 +55,19 @@ export default function LibraryClient({ stories }: Props) {
             <p className="text-gray-400">
               {stories.length} illustrated Islamic stories for children aged 3-12
             </p>
+          </div>
+
+          {/* Age group links — crawlable, also serve as filters */}
+          <div className="flex flex-wrap gap-2 mb-4">
+            <Link href="/ages/3-5" className="px-4 py-1.5 rounded-full text-xs font-semibold border border-gray-600 text-amber-300 hover:border-amber-300/50 transition-colors">
+              ⭐ Ages 3–5
+            </Link>
+            <Link href="/ages/6-8" className="px-4 py-1.5 rounded-full text-xs font-semibold border border-gray-600 text-teal hover:border-teal/50 transition-colors">
+              🌙 Ages 6–8
+            </Link>
+            <Link href="/ages/9-12" className="px-4 py-1.5 rounded-full text-xs font-semibold border border-gray-600 text-lavender hover:border-lavender/50 transition-colors">
+              🦋 Ages 9–12
+            </Link>
           </div>
 
           {/* Filters */}
@@ -85,6 +108,24 @@ export default function LibraryClient({ stories }: Props) {
               ))}
             </div>
           )}
+
+          {/* Browse by Theme */}
+          <div className="mt-16 pt-10 border-t border-gray-800">
+            <h2 className="text-lg font-bold mb-4" style={{ fontFamily: "Outfit, sans-serif" }}>
+              Browse by Islamic Value
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {themes.map((theme) => (
+                <Link
+                  key={theme}
+                  href={`/themes/${themeToSlug(theme)}`}
+                  className="px-3 py-1.5 rounded-full text-xs border border-gray-700 text-gray-400 hover:border-gold/40 hover:text-gold transition-colors capitalize"
+                >
+                  {themeToLabel(theme)}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </main>
       <Footer />

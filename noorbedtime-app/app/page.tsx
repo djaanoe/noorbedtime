@@ -140,7 +140,7 @@ export default function HomePage() {
                 ))}
               </div>
               <div className="mt-3 text-right">
-                <Link href="/library?tier=little_stars" className="text-gold/70 text-xs hover:text-gold transition-colors">
+                <Link href="/ages/3-5" className="text-gold/70 text-xs hover:text-gold transition-colors">
                   See all Little Stars stories →
                 </Link>
               </div>
@@ -158,7 +158,7 @@ export default function HomePage() {
                 ))}
               </div>
               <div className="mt-3 text-right">
-                <Link href="/library?tier=rising_moons" className="text-teal/70 text-xs hover:text-teal transition-colors">
+                <Link href="/ages/6-8" className="text-teal/70 text-xs hover:text-teal transition-colors">
                   See all Rising Moons stories →
                 </Link>
               </div>
@@ -176,7 +176,7 @@ export default function HomePage() {
                 ))}
               </div>
               <div className="mt-3 text-right">
-                <Link href="/library?tier=young_explorers" className="text-lavender/70 text-xs hover:text-lavender transition-colors">
+                <Link href="/ages/9-12" className="text-lavender/70 text-xs hover:text-lavender transition-colors">
                   See all Young Explorers stories →
                 </Link>
               </div>
