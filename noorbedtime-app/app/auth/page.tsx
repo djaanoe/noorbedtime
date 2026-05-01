@@ -28,8 +28,13 @@ export default function AuthPage() {
       else setMessage({ type: "success", text: "Check your email to confirm your account." });
     } else {
       const { error } = await supabase.auth.signInWithPassword({ email, password });
-      if (error) setMessage({ type: "error", text: error.message });
-      else window.location.href = "/account";
+      if (error) {
+        setMessage({ type: "error", text: error.message });
+      } else {
+        // Check if this email has a pending purchase and grant access if so
+        await fetch("/api/auth/grant-pending", { method: "POST" });
+        window.location.href = "/account";
+      }
     }
     setLoading(false);
   }
