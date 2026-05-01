@@ -65,3 +65,24 @@ export const AGE_TIER_RANGES: Record<Story["age_tier"], string> = {
   rising_moons: "Ages 6-8",
   young_explorers: "Ages 9-12",
 };
+
+export function getAllThemes(): string[] {
+  return Array.from(new Set(getAllStories().map((s) => s.theme))).sort();
+}
+
+export function getStoriesByTheme(themeSlug: string): Story[] {
+  const normalized = themeSlug.replace(/-/g, "_");
+  return getAllStories().filter(
+    (s) => s.theme === themeSlug || s.theme === normalized
+  );
+}
+
+export function themeToSlug(theme: string): string {
+  return theme.replace(/_/g, "-");
+}
+
+export function themeToLabel(theme: string): string {
+  return theme
+    .replace(/[_-]/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+}
