@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image" },
   metadataBase: new URL("https://noorbedtime.com"),
+  verification: {
+    google: "FILNucUhFCmvI2fYsiBKkOCMEvVl-z8gK46384rQK0c",
+  },
 };
 
 export default function RootLayout({
