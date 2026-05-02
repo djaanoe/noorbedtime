@@ -48,8 +48,8 @@ export default async function CreditsPage() {
           {/* Pricing card */}
           <div className="bg-gradient-to-br from-gold/10 to-navy-lighter rounded-2xl p-10 border border-gold/30 text-center relative mb-6 max-w-sm mx-auto">
             {founderActive ? (
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-navy text-[10px] font-bold px-3 py-0.5 rounded-full whitespace-nowrap">
-                🔥 FOUNDER&apos;S OFFER — {spotsLeft} SPOTS LEFT
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-navy text-[10px] font-bold px-4 py-1 rounded-full whitespace-nowrap">
+                🔥 FOUNDER&apos;S OFFER
               </div>
             ) : (
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-navy text-[10px] font-bold px-3 py-0.5 rounded-full">
@@ -57,19 +57,30 @@ export default async function CreditsPage() {
               </div>
             )}
 
-            <div className="mb-1">
-              {founderActive && (
-                <span className="text-gray-500 line-through text-lg mr-2">
+            {founderActive && (
+              <div className="mb-4 mt-2">
+                <span className="text-gray-400 line-through text-3xl font-bold mr-1">
                   ${FOUNDER_PRODUCT.regularPrice.toFixed(2)}
                 </span>
-              )}
-              <span className="text-5xl font-extrabold text-cream" style={{ fontFamily: "Outfit, sans-serif" }}>
+                <span className="text-xs text-gray-500 align-middle">regular price</span>
+              </div>
+            )}
+            <div className="mb-1">
+              <span className="text-6xl font-extrabold text-cream" style={{ fontFamily: "Outfit, sans-serif" }}>
                 ${activePrice.toFixed(2)}
               </span>
             </div>
-            <p className="text-gray-500 text-sm mb-6">
+            <p className="text-gray-500 text-sm mb-3">
               {founderActive ? "one-time · founder's price" : "one-time payment"}
             </p>
+            {founderActive && (
+              <div className="bg-gold/10 border border-gold/30 rounded-xl px-4 py-2.5 mb-5">
+                <p className="text-gold text-sm font-semibold">
+                  🔥 Only <span className="text-xl font-extrabold">{spotsLeft}</span> of {FOUNDER_PRODUCT.founderLimit} founder spots left
+                </p>
+                <p className="text-gray-500 text-xs mt-0.5">Price goes to ${FOUNDER_PRODUCT.regularPrice.toFixed(2)} after {FOUNDER_PRODUCT.founderLimit} members</p>
+              </div>
+            )}
 
             <ul className="text-left space-y-2 text-sm text-gray-300 mb-8">
               <li className="flex items-center gap-2"><span className="text-teal">✓</span> All 50+ Islamic stories</li>
@@ -89,12 +100,6 @@ export default async function CreditsPage() {
             <p className="text-gray-600 text-xs mt-3">Secure checkout via Gumroad</p>
           </div>
 
-          {founderActive && (
-            <p className="text-gray-500 text-xs mb-10">
-              After {FOUNDER_PRODUCT.founderLimit} founders, price returns to ${FOUNDER_PRODUCT.regularPrice.toFixed(2)}.{" "}
-              <span className="text-gold">{spotsLeft} spots remaining.</span>
-            </p>
-          )}
 
           <p className="text-teal text-sm mb-16">3 stories are always free — no account needed to start.</p>
 
@@ -110,7 +115,7 @@ export default async function CreditsPage() {
               },
               {
                 q: "Is it really a one-time payment?",
-                a: `Yes. Pay once and your access never expires. No subscription, no renewal, no hidden fees. Founder members lock in $${FOUNDER_PRODUCT.founderPrice.toFixed(2)} — the price will go up to $${FOUNDER_PRODUCT.regularPrice.toFixed(2)} after the first ${FOUNDER_PRODUCT.founderLimit} members.`,
+                a: `Yes. Pay once and your access never expires. No subscription, no renewal, no hidden fees. First ${FOUNDER_PRODUCT.founderLimit} members lock in $${FOUNDER_PRODUCT.founderPrice.toFixed(2)} — the price goes up to $${FOUNDER_PRODUCT.regularPrice.toFixed(2)} after that.`,
               },
               {
                 q: "What payment methods are accepted?",

@@ -6,6 +6,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StoryCard from "@/components/StoryCard";
 import { getAllStories } from "@/lib/stories";
+import { FOUNDER_PRODUCT } from "@/lib/credits";
+import { createAdminClient } from "@/lib/supabase/admin";
 
 export const metadata: Metadata = {
   title: "NoorBedtime — Islamic Bedtime Stories for Muslim Kids | Quran & Prophet Tales",
@@ -76,8 +78,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default function HomePage() {
+export default async function HomePage() {
   const allStories = getAllStories();
+
+  let spotsLeft = FOUNDER_PRODUCT.founderLimit;
+  try {
+    const admin = createAdminClient();
+    const { count } = await admin
+      .from("users")
+      .select("*", { count: "exact", head: true })
+      .eq("lifetime_access", true);
+    spotsLeft = Math.max(0, FOUNDER_PRODUCT.founderLimit - (count ?? 0));
+  } catch { /* fallback to full spots */ }
+
+  const founderActive = spotsLeft > 0;
+  const activePrice = founderActive ? FOUNDER_PRODUCT.founderPrice : FOUNDER_PRODUCT.regularPrice;
+  const activeUrl = founderActive ? FOUNDER_PRODUCT.founderGumroadUrl : FOUNDER_PRODUCT.regularGumroadUrl;
   const freeStories = allStories.filter((s) => s.is_free).slice(0, 3);
   const littleStars = allStories.filter((s) => s.age_tier === "little_stars" && !s.is_free).slice(0, 5);
   const risingMoons = allStories.filter((s) => s.age_tier === "rising_moons" && !s.is_free).slice(0, 5);
@@ -199,24 +215,41 @@ export default function HomePage() {
             <p className="text-gray-400 mb-8 text-sm">
               One payment. All 50+ stories. Forever.
             </p>
-            <div className="bg-gradient-to-br from-gold/10 to-navy-lighter rounded-2xl p-8 border border-gold/30 relative mb-5">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-navy text-[10px] font-bold px-3 py-0.5 rounded-full">
-                LIFETIME ACCESS
+            <div className="bg-gradient-to-br from-gold/10 to-navy-lighter rounded-2xl p-8 border border-gold/30 relative mb-3">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-navy text-[10px] font-bold px-3 py-0.5 rounded-full whitespace-nowrap">
+                {founderActive ? `🔥 FOUNDER'S OFFER — ${spotsLeft} SPOTS LEFT` : "LIFETIME ACCESS"}
               </div>
-              <div className="text-5xl font-extrabold text-cream mb-1" style={{ fontFamily: "Outfit, sans-serif" }}>
-                $4.99
+              <div className="mb-1">
+                {founderActive && (
+                  <span className="text-gray-500 line-through text-xl mr-2">${FOUNDER_PRODUCT.regularPrice.toFixed(2)}</span>
+                )}
+                <span className="text-5xl font-extrabold text-cream" style={{ fontFamily: "Outfit, sans-serif" }}>
+                  ${activePrice.toFixed(2)}
+                </span>
               </div>
-              <p className="text-gray-500 text-xs mb-5">one-time · no subscription</p>
+              <p className="text-gray-500 text-xs mb-5">
+                {founderActive ? "one-time · founder's price" : "one-time · no subscription"}
+              </p>
               <ul className="text-left space-y-1.5 text-sm text-gray-300 mb-7">
                 <li className="flex items-center gap-2"><span className="text-teal">✓</span> All 50+ illustrated stories</li>
                 <li className="flex items-center gap-2"><span className="text-teal">✓</span> All age tiers (3–5, 6–8, 9–12)</li>
                 <li className="flex items-center gap-2"><span className="text-teal">✓</span> New stories included forever</li>
                 <li className="flex items-center gap-2"><span className="text-teal">✓</span> Any device, no app needed</li>
               </ul>
-              <Link href="/credits" className="cta-glow block bg-gold text-navy font-bold py-3.5 rounded-xl hover:bg-gold-light transition-colors text-sm" style={{ fontFamily: "Outfit, sans-serif" }}>
-                Get Lifetime Access — $4.99
-              </Link>
+              <a
+                href={activeUrl}
+                className="cta-glow block bg-gold text-navy font-bold py-3.5 rounded-xl hover:bg-gold-light transition-colors text-sm"
+                style={{ fontFamily: "Outfit, sans-serif" }}
+              >
+                Get Lifetime Access — ${activePrice.toFixed(2)}
+              </a>
             </div>
+            {founderActive && (
+              <p className="text-xs text-gray-500 mb-3">
+                After {FOUNDER_PRODUCT.founderLimit} members, price returns to ${FOUNDER_PRODUCT.regularPrice.toFixed(2)}.{" "}
+                <span className="text-gold">{spotsLeft} spots remaining.</span>
+              </p>
+            )}
             <p className="text-teal text-xs">3 stories are always free. No account needed to start.</p>
           </div>
         </section>
