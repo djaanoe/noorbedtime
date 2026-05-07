@@ -5,7 +5,8 @@ import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StoryCard from "@/components/StoryCard";
-import { getAllStories, getStoryBySlug, getStoriesByTheme, AGE_TIER_LABELS, AGE_TIER_RANGES, themeToSlug, themeToLabel } from "@/lib/stories";
+import { getAllStories, getStoryBySlug, getStoriesByTheme, AGE_TIER_LABELS, AGE_TIER_RANGES, themeToSlug, themeToLabel, CATEGORIES } from "@/lib/stories";
+import { PROPHETS } from "@/lib/prophets";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -44,6 +45,18 @@ export default async function StoryPage({ params }: Props) {
   const relatedStories = getStoriesByTheme(themeSlug)
     .filter((s) => s.slug !== slug)
     .slice(0, 4);
+
+  const prophetLink = story.source_detail
+    ? Object.entries(PROPHETS).find(([, p]) =>
+        story.source_detail!.includes(p.arabicName === "محمد" ? "Muhammad" : p.name.replace("Prophet ", ""))
+      )
+    : null;
+  const categoryMeta = story.category ? CATEGORIES[
+    Object.keys(CATEGORIES).find((slug) => CATEGORIES[slug].categoryValue === story.category) ?? ""
+  ] : null;
+  const categorySlug = story.category
+    ? Object.keys(CATEGORIES).find((slug) => CATEGORIES[slug].categoryValue === story.category)
+    : null;
 
   const schema = [
     {
@@ -155,13 +168,29 @@ export default async function StoryPage({ params }: Props) {
                 )}
               </div>
 
-              <div className="flex items-center gap-2 text-xs text-gray-500">
+              <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-gray-500">
                 <span>Theme:{" "}
                   <Link href={`/themes/${themeSlug}`} className="text-gray-300 capitalize hover:text-gold transition-colors">
                     {themeToLabel(story.theme)}
                   </Link>
                 </span>
                 <span>·</span>
+                {categoryMeta && categorySlug && (
+                  <>
+                    <Link href={`/${categorySlug}`} className="text-gray-400 hover:text-gold transition-colors">
+                      {categoryMeta.icon} {categoryMeta.label}
+                    </Link>
+                    <span>·</span>
+                  </>
+                )}
+                {prophetLink && (
+                  <>
+                    <Link href={`/prophets/${prophetLink[0]}`} className="text-gold/70 hover:text-gold transition-colors">
+                      ✨ {prophetLink[1].name}
+                    </Link>
+                    <span>·</span>
+                  </>
+                )}
                 <span>{story.pages.length} pages</span>
               </div>
             </div>

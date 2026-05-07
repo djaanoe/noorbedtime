@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getStoriesByTier, AGE_TIER_LABELS } from "@/lib/stories";
+import { getStoriesByTier, AGE_TIER_LABELS, CATEGORIES } from "@/lib/stories";
 import StoryCard from "@/components/StoryCard";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -108,7 +108,26 @@ export default function AgePage({ params }: Props) {
             ))}
           </div>
 
-          <div className="mt-16 bg-navy-lighter rounded-2xl border border-gray-700/30 p-8 text-center">
+          {/* Browse by category for this age */}
+          <div className="mt-12 mb-6">
+            <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-4">
+              Browse {label} Stories by Category
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+              {Object.entries(CATEGORIES).map(([slug, cat]) => (
+                <Link
+                  key={slug}
+                  href={`/${slug}/ages/${params.range}`}
+                  className="bg-navy-lighter rounded-xl p-3 border border-gray-700/30 hover:border-gold/30 transition-colors"
+                >
+                  <div className="text-lg mb-1">{cat.icon}</div>
+                  <div className="text-xs font-semibold text-gray-300">{cat.label}</div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-6 bg-navy-lighter rounded-2xl border border-gray-700/30 p-8 text-center">
             <p className="text-gray-400 text-sm mb-4">
               Unlock all {stories.length}+ stories in the {label} collection — plus every other age group — for one payment.
             </p>

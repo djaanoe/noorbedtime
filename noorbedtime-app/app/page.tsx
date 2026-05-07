@@ -5,7 +5,7 @@ export const dynamic = "force-dynamic";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StoryCard from "@/components/StoryCard";
-import { getAllStories } from "@/lib/stories";
+import { getAllStories, CATEGORIES } from "@/lib/stories";
 import { FOUNDER_PRODUCT } from "@/lib/credits";
 import { createAdminClient } from "@/lib/supabase/admin";
 
@@ -195,6 +195,51 @@ export default async function HomePage() {
                 <Link href="/ages/9-12" className="text-lavender/70 text-xs hover:text-lavender transition-colors">
                   See all Young Explorers stories →
                 </Link>
+              </div>
+            </div>
+
+            {/* Browse by Category */}
+            <div className="mt-10 mb-4">
+              <h2 className="text-lg md:text-xl font-bold mb-4 flex items-center gap-2" style={{ fontFamily: "Outfit, sans-serif" }}>
+                <span className="text-gold">🗂</span> Browse by Category
+              </h2>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+                {Object.entries(CATEGORIES).map(([slug, cat]) => (
+                  <Link
+                    key={slug}
+                    href={`/${slug}`}
+                    className="bg-navy-lighter rounded-xl p-4 border border-gray-700/30 hover:border-gold/40 transition-colors group"
+                  >
+                    <div className="text-2xl mb-2">{cat.icon}</div>
+                    <div className="text-sm font-semibold text-gray-200 group-hover:text-gold transition-colors" style={{ fontFamily: "Outfit, sans-serif" }}>
+                      {cat.label}
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Browse by Prophet */}
+            <div className="mt-6 mb-6">
+              <h2 className="text-lg md:text-xl font-bold mb-4 flex items-center gap-2" style={{ fontFamily: "Outfit, sans-serif" }}>
+                <span className="text-gold">✨</span> Browse by Prophet
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  { slug: "prophet-muhammad", name: "Prophet Muhammad ﷺ" },
+                  { slug: "prophet-yusuf", name: "Prophet Yusuf" },
+                  { slug: "prophet-ibrahim", name: "Prophet Ibrahim" },
+                  { slug: "prophet-musa", name: "Prophet Musa" },
+                  { slug: "prophet-sulayman", name: "Prophet Sulayman" },
+                ].map(({ slug, name }) => (
+                  <Link
+                    key={slug}
+                    href={`/prophets/${slug}`}
+                    className="text-sm px-4 py-2 rounded-full border border-gold/30 text-gold/80 hover:bg-gold/10 hover:text-gold transition-colors"
+                  >
+                    {name}
+                  </Link>
+                ))}
               </div>
             </div>
 

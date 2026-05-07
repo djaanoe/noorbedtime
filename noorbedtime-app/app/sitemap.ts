@@ -1,9 +1,13 @@
 import { MetadataRoute } from "next";
-import { getAllStories, getAllThemes, themeToSlug } from "@/lib/stories";
+import { getAllStories, getAllThemes, getAllCategories, themeToSlug } from "@/lib/stories";
+import { getAllProphets } from "@/lib/prophets";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const stories = getAllStories();
   const themes = getAllThemes();
+  const categories = getAllCategories();
+  const prophets = getAllProphets();
+  const ageRanges = ["3-5", "6-8", "9-12"];
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: "https://noorbedtime.com", priority: 1.0, changeFrequency: "daily" },
@@ -11,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://noorbedtime.com/credits", priority: 0.7, changeFrequency: "monthly" },
   ];
 
-  const agePages: MetadataRoute.Sitemap = ["3-5", "6-8", "9-12"].map((range) => ({
+  const agePages: MetadataRoute.Sitemap = ageRanges.map((range) => ({
     url: `https://noorbedtime.com/ages/${range}`,
     priority: 0.85,
     changeFrequency: "weekly",
@@ -23,6 +27,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly",
   }));
 
+  const categoryPages: MetadataRoute.Sitemap = categories.map((slug) => ({
+    url: `https://noorbedtime.com/${slug}`,
+    priority: 0.8,
+    changeFrequency: "weekly",
+  }));
+
+  const categoryAgePages: MetadataRoute.Sitemap = categories.flatMap((slug) =>
+    ageRanges.map((range) => ({
+      url: `https://noorbedtime.com/${slug}/ages/${range}`,
+      priority: 0.7,
+      changeFrequency: "weekly",
+    }))
+  );
+
+  const prophetPages: MetadataRoute.Sitemap = prophets.map((slug) => ({
+    url: `https://noorbedtime.com/prophets/${slug}`,
+    priority: 0.8,
+    changeFrequency: "monthly",
+  }));
+
   const storyPages: MetadataRoute.Sitemap = stories.map((s) => ({
     url: `https://noorbedtime.com/story/${s.slug}`,
     priority: s.is_free ? 0.9 : 0.8,
@@ -30,5 +54,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
   }));
 
-  return [...staticPages, ...agePages, ...themePages, ...storyPages];
+  return [
+    ...staticPages,
+    ...agePages,
+    ...categoryPages,
+    ...themePages,
+    ...prophetPages,
+    ...categoryAgePages,
+    ...storyPages,
+  ];
 }
