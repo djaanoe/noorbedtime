@@ -12,6 +12,7 @@ export default function Footer() {
           <nav className="flex flex-wrap gap-5 text-xs text-gray-400">
             <Link href="/library" className="hover:text-gold transition-colors">Library</Link>
             <Link href="/credits" className="hover:text-gold transition-colors">Pricing</Link>
+            <Link href="/blog" className="hover:text-gold transition-colors">Blog</Link>
             <Link href="/account" className="hover:text-gold transition-colors">Account</Link>
           </nav>
           <div className="flex gap-4 text-gray-500 text-sm">

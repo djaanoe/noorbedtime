@@ -8,6 +8,7 @@ import StoryCard from "@/components/StoryCard";
 import { getAllStories, CATEGORIES } from "@/lib/stories";
 import { FOUNDER_PRODUCT } from "@/lib/credits";
 import { createAdminClient } from "@/lib/supabase/admin";
+import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "NoorBedtime — Islamic Bedtime Stories for Muslim Kids | Quran & Prophet Tales",
@@ -80,6 +81,7 @@ export const metadata: Metadata = {
 
 export default async function HomePage() {
   const allStories = getAllStories();
+  const blogPosts = getAllPosts().slice(0, 3);
 
   let spotsLeft = FOUNDER_PRODUCT.founderLimit;
   try {
@@ -247,6 +249,32 @@ export default async function HomePage() {
               <Link href="/library" className="inline-block border-2 border-gold/50 text-gold font-semibold px-8 py-3 rounded-xl hover:bg-gold/10 transition-colors" style={{ fontFamily: "Outfit, sans-serif" }}>
                 Browse All 50+ Stories →
               </Link>
+            </div>
+
+            {/* Blog teaser */}
+            <div className="mt-12">
+              <h2 className="text-lg md:text-xl font-bold mb-4 flex items-center gap-2" style={{ fontFamily: "Outfit, sans-serif" }}>
+                <span className="text-gold">📝</span> For Muslim Parents
+              </h2>
+              <div className="grid sm:grid-cols-3 gap-4">
+                {blogPosts.map((post) => (
+                  <Link
+                    key={post.slug}
+                    href={`/blog/${post.slug}`}
+                    className="bg-navy-lighter rounded-xl p-4 border border-gray-700/30 hover:border-gold/30 transition-colors group"
+                  >
+                    <p className="text-xs text-gray-500 mb-2">{post.readingTimeMinutes} min read</p>
+                    <h3 className="text-sm font-semibold text-gray-200 group-hover:text-gold transition-colors leading-snug" style={{ fontFamily: "Outfit, sans-serif" }}>
+                      {post.title}
+                    </h3>
+                  </Link>
+                ))}
+              </div>
+              <div className="mt-3 text-right">
+                <Link href="/blog" className="text-gold/70 text-xs hover:text-gold transition-colors">
+                  See all articles →
+                </Link>
+              </div>
             </div>
           </div>
         </section>

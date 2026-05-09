@@ -1,12 +1,14 @@
 import { MetadataRoute } from "next";
 import { getAllStories, getAllThemes, getAllCategories, themeToSlug } from "@/lib/stories";
 import { getAllProphets } from "@/lib/prophets";
+import { getAllPosts } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const stories = getAllStories();
   const themes = getAllThemes();
   const categories = getAllCategories();
   const prophets = getAllProphets();
+  const posts = getAllPosts();
   const ageRanges = ["3-5", "6-8", "9-12"];
 
   const staticPages: MetadataRoute.Sitemap = [
@@ -47,6 +49,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly",
   }));
 
+  const blogPages: MetadataRoute.Sitemap = [
+    { url: "https://noorbedtime.com/blog", priority: 0.8, changeFrequency: "weekly" },
+    ...posts.map((p) => ({
+      url: `https://noorbedtime.com/blog/${p.slug}`,
+      priority: 0.75,
+      changeFrequency: "monthly" as const,
+      lastModified: new Date(p.publishedAt),
+    })),
+  ];
+
   const storyPages: MetadataRoute.Sitemap = stories.map((s) => ({
     url: `https://noorbedtime.com/story/${s.slug}`,
     priority: s.is_free ? 0.9 : 0.8,
@@ -60,6 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...categoryPages,
     ...themePages,
     ...prophetPages,
+    ...blogPages,
     ...categoryAgePages,
     ...storyPages,
   ];
