@@ -68,7 +68,7 @@ export default function QuickReadsAgePage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navbar />
-      <main className="min-h-screen bg-navy">
+      <main className="pt-20 min-h-screen bg-navy">
         <div className="max-w-6xl mx-auto px-4 py-12">
           <nav className="text-xs text-gray-500 mb-8 flex items-center gap-2">
             <Link href="/" className="hover:text-gold transition-colors">Home</Link>
