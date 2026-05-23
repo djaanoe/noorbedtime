@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   verification: {
     google: "FILNucUhFCmvI2fYsiBKkOCMEvVl-z8gK46384rQK0c",
   },
+  other: {
+    "google-adsense-account": "ca-pub-4772774051728006",
+  },
 };
 
 export default function RootLayout({
@@ -35,13 +38,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        {children}
-        <Script
+      <head>
+        {/* AdSense — in <head> so the crawler finds it in static HTML */}
+        <script
+          async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4772774051728006"
-          strategy="afterInteractive"
           crossOrigin="anonymous"
         />
+      </head>
+      <body>
+        {children}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-44748M67ZC"
           strategy="afterInteractive"
