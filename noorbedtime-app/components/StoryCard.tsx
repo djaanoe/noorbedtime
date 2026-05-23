@@ -33,11 +33,6 @@ export default function StoryCard({ story }: Props) {
       href={`/story/${story.slug}`}
       className={`story-card block rounded-xl overflow-hidden bg-navy-lighter border border-gray-700/30 ${borderHover} relative`}
     >
-      {story.is_free ? (
-        <span className="free-badge">FREE</span>
-      ) : (
-        <span className="credit-badge">Unlock</span>
-      )}
       <div className="aspect-[3/4] relative bg-gradient-to-br from-amber-900/20 to-navy flex items-center justify-center overflow-hidden">
         <Image
           src={illustrationUrl}

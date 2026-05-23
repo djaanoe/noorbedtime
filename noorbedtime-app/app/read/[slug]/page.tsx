@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { Story } from "@/types";
+import AdSlot from "@/components/AdSlot";
 
 export default function ReadPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -13,11 +14,7 @@ export default function ReadPage() {
 
   useEffect(() => {
     fetch(`/api/stories/${slug}`)
-      .then((r) => {
-        if (r.status === 401) { window.location.href = "/auth"; return null; }
-        if (r.status === 403) { window.location.href = "/credits"; return null; }
-        return r.json();
-      })
+      .then((r) => r.json())
       .then((data) => { if (data) { setStory(data); setLoading(false); } })
       .catch(() => setLoading(false));
   }, [slug]);
@@ -90,19 +87,40 @@ export default function ReadPage() {
           </p>
 
           {isLast && (
-            <div className="mt-8 bg-navy-lighter rounded-xl p-5 border border-gold/20">
-              <p className="text-gold font-semibold mb-1" style={{ fontFamily: "Outfit, sans-serif" }}>
-                The End 🌙
-              </p>
-              <p className="text-gray-400 text-sm">
-                May Allah bless your family with sweet dreams.
-              </p>
-              <Link
-                href="/library"
-                className="mt-3 inline-block text-sm text-gold hover:underline"
-              >
-                Explore more stories →
-              </Link>
+            <div className="mt-8 space-y-4">
+              <div className="bg-navy-lighter rounded-xl p-5 border border-gold/20">
+                <p className="text-gold font-semibold mb-1" style={{ fontFamily: "Outfit, sans-serif" }}>
+                  The End 🌙
+                </p>
+                <p className="text-gray-400 text-sm">
+                  May Allah bless your family with sweet dreams.
+                </p>
+                <Link
+                  href="/library"
+                  className="mt-3 inline-block text-sm text-gold hover:underline"
+                >
+                  Explore more stories →
+                </Link>
+              </div>
+
+              {/* Donate section */}
+              <div className="bg-gradient-to-br from-gold/10 to-navy-lighter rounded-xl p-5 border border-gold/20 text-center">
+                <p className="text-white text-sm font-semibold mb-1" style={{ fontFamily: "Outfit, sans-serif" }}>
+                  NoorBedtime is free for every family 💛
+                </p>
+                <p className="text-gray-400 text-xs mb-3">
+                  Support us to keep the stories flowing for Muslim children everywhere.
+                </p>
+                <Link
+                  href="/donate"
+                  className="inline-block text-xs font-bold text-navy bg-gold px-4 py-2 rounded-full hover:bg-gold-light transition-colors"
+                  style={{ fontFamily: "Outfit, sans-serif" }}
+                >
+                  ❤️ Support NoorBedtime
+                </Link>
+              </div>
+
+              <AdSlot id="reader-after-end" className="mt-2" />
             </div>
           )}
         </div>

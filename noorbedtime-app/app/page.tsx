@@ -1,19 +1,15 @@
 import { Metadata } from "next";
 import Link from "next/link";
-
-export const dynamic = "force-dynamic";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StoryCard from "@/components/StoryCard";
 import { getAllStories, CATEGORIES } from "@/lib/stories";
-import { FOUNDER_PRODUCT } from "@/lib/credits";
-import { createAdminClient } from "@/lib/supabase/admin";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "NoorBedtime — Islamic Bedtime Stories for Muslim Kids | Quran & Prophet Tales",
   description:
-    "Beautiful bedtime stories for Muslim children aged 3-12. Scholar-validated tales inspired by the Quran and Prophet traditions. 3 free stories — start reading tonight. Full library $4.99 one-time.",
+    "Beautiful bedtime stories for Muslim children aged 3-12. Scholar-validated tales inspired by the Quran and Prophet traditions. All 50+ stories free — start reading tonight.",
   alternates: { canonical: "https://noorbedtime.com" },
   other: {
     "application/ld+json": JSON.stringify([
@@ -46,7 +42,7 @@ export const metadata: Metadata = {
             name: "How much does NoorBedtime cost?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "NoorBedtime has 3 always-free stories — no account needed. Full access to all 50+ stories is a one-time payment of $4.99, forever. No subscription, no renewal.",
+              text: "NoorBedtime is completely free. All 50+ stories are available to every family — no account needed, no payment required.",
             },
           },
           {
@@ -79,27 +75,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function HomePage() {
+export default function HomePage() {
   const allStories = getAllStories();
   const blogPosts = getAllPosts().slice(0, 3);
 
-  let spotsLeft = FOUNDER_PRODUCT.founderLimit;
-  try {
-    const admin = createAdminClient();
-    const { count } = await admin
-      .from("users")
-      .select("*", { count: "exact", head: true })
-      .eq("lifetime_access", true);
-    spotsLeft = Math.max(0, FOUNDER_PRODUCT.founderLimit - (count ?? 0));
-  } catch { /* fallback to full spots */ }
-
-  const founderActive = spotsLeft > 0;
-  const activePrice = founderActive ? FOUNDER_PRODUCT.founderPrice : FOUNDER_PRODUCT.regularPrice;
-  const activeUrl = founderActive ? FOUNDER_PRODUCT.founderGumroadUrl : FOUNDER_PRODUCT.regularGumroadUrl;
-  const freeStories = allStories.filter((s) => s.is_free).slice(0, 3);
-  const littleStars = allStories.filter((s) => s.age_tier === "little_stars" && !s.is_free).slice(0, 5);
-  const risingMoons = allStories.filter((s) => s.age_tier === "rising_moons" && !s.is_free).slice(0, 5);
-  const youngExplorers = allStories.filter((s) => s.age_tier === "young_explorers" && !s.is_free).slice(0, 5);
+  const littleStars = allStories.filter((s) => s.age_tier === "little_stars").slice(0, 5);
+  const risingMoons = allStories.filter((s) => s.age_tier === "rising_moons").slice(0, 5);
+  const youngExplorers = allStories.filter((s) => s.age_tier === "young_explorers").slice(0, 5);
 
   return (
     <>
@@ -119,13 +101,13 @@ export default async function HomePage() {
               <span className="text-gold">Your Children Will Love</span>
             </h1>
             <p className="text-base md:text-lg text-gray-300 max-w-xl mx-auto mb-5">
-              50+ illustrated stories from the Quran &amp; Prophetic traditions. Each story teaches a beautiful Islamic value. 3 free forever.
+              50+ illustrated stories from the Quran &amp; Prophetic traditions. Each story teaches a beautiful Islamic value. All free, always.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-xs text-gray-400 mb-2">
               <span className="flex items-center gap-1"><span className="text-gold">★</span> 50+ Stories</span>
               <span className="flex items-center gap-1"><span className="text-teal">●</span> Ages 3-12</span>
               <span className="flex items-center gap-1"><span className="text-gold">✓</span> Scholar Validated</span>
-              <span className="flex items-center gap-1"><span className="text-teal">♥</span> No Ads</span>
+              <span className="flex items-center gap-1"><span className="text-teal">♥</span> 100% Free</span>
             </div>
           </div>
         </header>
@@ -133,18 +115,6 @@ export default async function HomePage() {
         {/* Story Library */}
         <section className="py-8 md:py-12 px-4" id="library">
           <div className="max-w-6xl mx-auto">
-
-            {/* Free Stories */}
-            <div className="mb-8">
-              <h2 className="text-lg md:text-xl font-bold mb-4 flex items-center gap-2" style={{ fontFamily: "Outfit, sans-serif" }}>
-                <span className="text-teal">★</span> Free Stories — Read Now
-              </h2>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-                {freeStories.map((story) => (
-                  <StoryCard key={story.slug} story={story} />
-                ))}
-              </div>
-            </div>
 
             {/* Little Stars */}
             <div className="mb-8">
@@ -279,51 +249,29 @@ export default async function HomePage() {
           </div>
         </section>
 
-        {/* Pricing */}
-        <section className="py-12 md:py-20 px-4 bg-navy-light/50" id="credits">
+        {/* Donate / Support */}
+        <section className="py-12 md:py-20 px-4 bg-navy-light/50" id="support">
           <div className="max-w-md mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ fontFamily: "Outfit, sans-serif" }}>
-              Unlock the Full Library
+              Free for Every Muslim Family
             </h2>
             <p className="text-gray-400 mb-8 text-sm">
-              One payment. All 50+ stories. Forever.
+              NoorBedtime is free forever. If these stories bring light to your home, consider supporting us so we can keep growing.
             </p>
             <div className="bg-gradient-to-br from-gold/10 to-navy-lighter rounded-2xl p-8 border border-gold/30 relative mb-3">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-navy text-[10px] font-bold px-3 py-0.5 rounded-full whitespace-nowrap">
-                {founderActive ? `🔥 FOUNDER'S OFFER — ${spotsLeft} SPOTS LEFT` : "LIFETIME ACCESS"}
-              </div>
-              <div className="mb-1">
-                {founderActive && (
-                  <span className="text-gray-500 line-through text-xl mr-2">${FOUNDER_PRODUCT.regularPrice.toFixed(2)}</span>
-                )}
-                <span className="text-5xl font-extrabold text-cream" style={{ fontFamily: "Outfit, sans-serif" }}>
-                  ${activePrice.toFixed(2)}
-                </span>
-              </div>
-              <p className="text-gray-500 text-xs mb-5">
-                {founderActive ? "one-time · founder's price" : "one-time · no subscription"}
+              <div className="text-3xl mb-4">💛</div>
+              <p className="text-gray-300 text-sm mb-6">
+                Every donation helps us create more illustrated Islamic stories for Muslim children everywhere.
               </p>
-              <ul className="text-left space-y-1.5 text-sm text-gray-300 mb-7">
-                <li className="flex items-center gap-2"><span className="text-teal">✓</span> All 50+ illustrated stories</li>
-                <li className="flex items-center gap-2"><span className="text-teal">✓</span> All age tiers (3–5, 6–8, 9–12)</li>
-                <li className="flex items-center gap-2"><span className="text-teal">✓</span> New stories included forever</li>
-                <li className="flex items-center gap-2"><span className="text-teal">✓</span> Any device, no app needed</li>
-              </ul>
-              <a
-                href={activeUrl}
+              <Link
+                href="/donate"
                 className="cta-glow block bg-gold text-navy font-bold py-3.5 rounded-xl hover:bg-gold-light transition-colors text-sm"
                 style={{ fontFamily: "Outfit, sans-serif" }}
               >
-                Get Lifetime Access — ${activePrice.toFixed(2)}
-              </a>
+                ❤️ Support NoorBedtime
+              </Link>
             </div>
-            {founderActive && (
-              <p className="text-xs text-gray-500 mb-3">
-                After {FOUNDER_PRODUCT.founderLimit} members, price returns to ${FOUNDER_PRODUCT.regularPrice.toFixed(2)}.{" "}
-                <span className="text-gold">{spotsLeft} spots remaining.</span>
-              </p>
-            )}
-            <p className="text-teal text-xs">3 stories are always free. No account needed to start.</p>
+            <p className="text-teal text-xs">All 50+ stories are always free. No account needed.</p>
           </div>
         </section>
 
@@ -337,7 +285,7 @@ export default async function HomePage() {
               <div>
                 <div className="text-3xl mb-3">📖</div>
                 <h3 className="text-base font-bold mb-2" style={{ fontFamily: "Outfit, sans-serif" }}>1. Pick a Story</h3>
-                <p className="text-gray-400 text-sm">Browse by age, theme, or prophet. 3 are free — no signup needed.</p>
+                <p className="text-gray-400 text-sm">Browse by age, theme, or prophet. All 50+ stories are free — no signup needed.</p>
               </div>
               <div>
                 <div className="text-3xl mb-3">🌙</div>
@@ -360,7 +308,7 @@ export default async function HomePage() {
               {[
                 { icon: "📖", title: "Quran & Hadith", desc: "Every story cites its source" },
                 { icon: "✅", title: "Scholar Reviewed", desc: "Validated for accuracy" },
-                { icon: "🚫", title: "No Ads, Ever", desc: "Clean, distraction-free" },
+                { icon: "🆓", title: "Always Free", desc: "No account, no payment" },
                 { icon: "✨", title: "Respectful Art", desc: "No face depictions" },
               ].map(({ icon, title, desc }) => (
                 <div key={title} className="bg-navy-lighter rounded-xl p-5 border border-gray-700/20">

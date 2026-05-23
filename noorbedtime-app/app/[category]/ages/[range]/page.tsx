@@ -165,8 +165,7 @@ export default function CategoryAgePage({ params }: Props) {
 
           <div className="mt-16 bg-navy-lighter rounded-2xl border border-gray-700/30 p-8 text-center">
             <p className="text-gray-400 text-sm mb-4">
-              Unlock all {allCategoryStories.length}+ {meta.label.toLowerCase()} stories plus the
-              full library of 50+ Islamic tales.
+              All {allCategoryStories.length}+ {meta.label.toLowerCase()} stories are completely free — no account needed.
             </p>
             <Link
               href={`/${params.category}`}
@@ -175,11 +174,11 @@ export default function CategoryAgePage({ params }: Props) {
               ← All {meta.label} stories
             </Link>
             <Link
-              href="/credits"
+              href="/donate"
               className="inline-block bg-gold text-navy font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-gold-light transition-colors"
               style={{ fontFamily: "Outfit, sans-serif" }}
             >
-              Unlock All Stories — $4.99
+              ❤️ Support NoorBedtime — It&apos;s Free Forever
             </Link>
           </div>
         </div>

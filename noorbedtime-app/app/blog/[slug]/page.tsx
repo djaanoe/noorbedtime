@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug, BlogSection } from "@/lib/blog";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AdSlot from "@/components/AdSlot";
 
 interface Props {
   params: { slug: string };
@@ -212,9 +213,23 @@ export default function BlogPostPage({ params }: Props) {
 
           <hr className="border-gray-700/40 mb-8" />
 
-          <article>{post.content.map((section, i) => renderSection(section, i))}</article>
+          <article>
+            {post.content.map((section, i) => {
+              const midpoint = Math.floor(post.content.length / 2);
+              return (
+                <>
+                  {renderSection(section, i)}
+                  {i === midpoint && (
+                    <AdSlot key={`ad-mid-${i}`} id="blog-mid-article" format="in-article" className="my-6" />
+                  )}
+                </>
+              );
+            })}
+          </article>
 
-          <hr className="border-gray-700/40 mt-12 mb-8" />
+          <AdSlot id="blog-after-article" className="my-8" />
+
+          <hr className="border-gray-700/40 mt-4 mb-8" />
 
           {/* More articles */}
           {allPosts.length > 0 && (

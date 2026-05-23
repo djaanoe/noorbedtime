@@ -749,6 +749,544 @@ const POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "islamic-stories-for-ramadan",
+    title: "Islamic Stories for Ramadan — Best Picks for Each Age Group",
+    description:
+      "The best Islamic stories for Ramadan to read with your Muslim children. Curated picks for ages 3–5, 6–8, and 9–12 to make Ramadan nights meaningful and memorable.",
+    publishedAt: "2026-05-05",
+    keyword: "islamic stories for ramadan",
+    readingTimeMinutes: 6,
+    content: [
+      {
+        type: "p",
+        text: "Ramadan is the most sacred month of the year — and the nights are golden hours for family connection. After Iftar, when the day's fast is broken and the house is quiet, is the perfect time to gather your children and share a story that deepens their understanding of why Ramadan is so special.",
+      },
+      {
+        type: "p",
+        text: "The right Ramadan story does more than entertain. It answers your child's questions about fasting, teaches the connection between Ramadan and the Quran, and helps them feel the beauty of this blessed month rather than just its rules.",
+      },
+      {
+        type: "h2",
+        text: "What Makes a Story Perfect for Ramadan?",
+      },
+      {
+        type: "p",
+        text: "A great Ramadan story for children connects Ramadan to its spiritual heart: the revelation of the Quran, the importance of gratitude, and the joy of drawing closer to Allah. Stories about Prophet Ibrahim's devotion, Prophet Muhammad's teachings on generosity, or everyday Muslim families fasting together all work beautifully.",
+      },
+      {
+        type: "p",
+        text: "The best Ramadan stories avoid making the fast feel like a burden. Instead, they show children that Ramadan is a gift — a month when the doors of mercy are wide open and even small acts of goodness carry immense reward.",
+      },
+      {
+        type: "h2",
+        text: "Best Ramadan Stories by Age",
+      },
+      {
+        type: "h3",
+        text: "Ages 3–5: Little Stars (Simple, Joyful, Sensory)",
+      },
+      {
+        type: "p",
+        text: "For toddlers and young children, Ramadan stories should be warm and concrete. Focus on things they can see and feel: the moon, the lanterns, the iftar table, the du'a before eating. Prophet Muhammad ﷺ's love for dates — the traditional iftar food — makes a wonderful story anchor.",
+      },
+      {
+        type: "ul",
+        items: [
+          "The Little Ant's Big Thank You — teaches gratitude (core Ramadan virtue)",
+          "Stories about Prophet Muhammad's ﷺ generosity during Ramadan",
+          "Any story featuring du'a, bismillah, or saying 'Alhamdulillah' after eating",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Ages 6–8: Rising Moons (Connection to Quran and Fasting)",
+      },
+      {
+        type: "p",
+        text: "Children in this age group can understand why we fast — and they are often starting to try shorter fasts themselves. Stories that explain the connection between Ramadan and the Quran's revelation are perfect. The story of how the Quran came down to Prophet Muhammad ﷺ in the Cave of Hira is one of the most powerful Ramadan stories you can share.",
+      },
+      {
+        type: "ul",
+        items: [
+          "The Light of Patience — Prophet Yusuf's story (patience is a central Ramadan theme)",
+          "Stories about the first revelation and why Ramadan is the month of the Quran",
+          "Tales of Islamic scholars and their devotion to Quran in Ramadan",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Ages 9–12: Young Explorers (Meaning and Purpose)",
+      },
+      {
+        type: "p",
+        text: "Preteens can engage with deeper questions: What is taqwa? Why does Allah command fasting? How did the Companions experience Ramadan? Stories about the Battle of Badr (fought in Ramadan), the conquest of Mecca, or the lives of the Sahaba during the blessed month connect Ramadan to Islamic history and help older children understand the month's full significance.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Stories about the Prophet's ﷺ practice of Quran recitation and night prayer in Ramadan",
+          "The Battle of Badr — faith and trust in Allah during difficulty",
+          "Stories of Laylat al-Qadr and what it means for a Muslim",
+        ],
+      },
+      {
+        type: "cta-box",
+        text: "Browse our full library of Islamic stories — many featuring themes of gratitude, patience, and devotion that are perfect for Ramadan nights.",
+        href: "/library",
+        label: "Browse All Stories →",
+      },
+      {
+        type: "h2",
+        text: "Tips for Ramadan Storytelling Nights",
+      },
+      {
+        type: "ol",
+        items: [
+          "Read after Iftar, when bellies are full and children are calm and receptive",
+          "Light a candle or lamp to create an atmospheric, story-time feel",
+          "Ask one question after each story: 'What do you think Allah loves most about this story?'",
+          "Let older children read aloud to younger siblings — it builds confidence and connection",
+          "Revisit the same stories multiple nights — repetition deepens understanding",
+        ],
+      },
+      {
+        type: "faq",
+        questions: [
+          {
+            q: "What age can children start understanding Ramadan stories?",
+            a: "Children as young as 2–3 can enjoy simple Ramadan stories that focus on sensory elements like the moon, iftar food, and family togetherness. Deeper meaning develops gradually through ages 6–12.",
+          },
+          {
+            q: "Should Ramadan stories always be about fasting?",
+            a: "No. The best Ramadan stories connect children to the broader spiritual gifts of the month: the Quran, generosity, patience, gratitude, and closeness to Allah. Stories about any of these themes work beautifully during Ramadan.",
+          },
+          {
+            q: "How long should Ramadan bedtime stories be?",
+            a: "After a day of fasting, keep bedtime stories to 10–20 minutes. Children (and parents) are often tired, so shorter stories with rich meaning are better than long ones. The NoorBedtime library has stories from 10 to 20 minutes.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "prophet-muhammad-stories-for-children",
+    title: "Prophet Muhammad Stories for Children — Best Ways to Teach Kids About the Prophet ﷺ",
+    description:
+      "How to share Prophet Muhammad's ﷺ life and character with Muslim children through age-appropriate stories. The most beloved prophet stories for kids aged 3–12.",
+    publishedAt: "2026-05-08",
+    keyword: "prophet muhammad stories for children",
+    readingTimeMinutes: 8,
+    content: [
+      {
+        type: "p",
+        text: "Love of the Prophet Muhammad ﷺ is one of the most important gifts we can give our children. When a child truly knows the Prophet — his gentleness with animals, his love for children, his patience in hardship — they have a living model of Islamic character that no textbook can provide.",
+      },
+      {
+        type: "p",
+        text: "Stories are the best way to build that love. Children don't fall in love with a list of attributes. They fall in love with moments — the day the Prophet ﷺ held Imam Hassan and Hussain on his shoulders, the time he protected a stray cat, the story of how he never raised his hand to anyone weaker than himself.",
+      },
+      {
+        type: "h2",
+        text: "Which Stories About the Prophet ﷺ Should I Start With?",
+      },
+      {
+        type: "p",
+        text: "The best starting stories for young children focus on the Prophet's ﷺ character in everyday moments. These are more accessible than historical battles and political events — and they speak directly to values children can practice themselves.",
+      },
+      {
+        type: "ul",
+        items: [
+          "His love and gentleness with children (al-Hasan and al-Hussain)",
+          "His kindness to animals (the cat who slept on his robe)",
+          "His patience with neighbors who threw trash at him",
+          "His practice of thanking Allah for every small blessing",
+          "His warmth toward the elderly and the poor",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Age-Appropriate Prophet Muhammad Stories",
+      },
+      {
+        type: "h3",
+        text: "Ages 3–5: Focus on His Gentleness and Love",
+      },
+      {
+        type: "p",
+        text: "Young children understand kindness. Stories of the Prophet ﷺ being gentle with animals, playing with his grandchildren, and caring for the poor are ideal. Keep the story short, warm, and sensory — what did he see, feel, and do?",
+      },
+      {
+        type: "h3",
+        text: "Ages 6–8: His Character Under Pressure",
+      },
+      {
+        type: "p",
+        text: "Children this age are beginning to navigate conflict and fairness. Stories of how the Prophet ﷺ responded to people who mocked him, betrayed him, or treated him unkindly — and still showed forgiveness — are incredibly powerful teaching moments.",
+      },
+      {
+        type: "h3",
+        text: "Ages 9–12: His Mission and Courage",
+      },
+      {
+        type: "p",
+        text: "Preteens can engage with the Prophet's ﷺ full mission: the first revelation, the years in Mecca, the hijra to Medina, and the establishment of the Muslim community. These stories of courage, sacrifice, and trust in Allah resonate deeply with young people building their own identity.",
+      },
+      {
+        type: "h2",
+        text: "How to Tell Prophet Stories in a Way Children Love",
+      },
+      {
+        type: "ol",
+        items: [
+          "Always begin: 'This is a true story from 1,400 years ago...' — children love knowing it's real",
+          "Use dialogue. 'The Prophet ﷺ said...' brings him to life more than 'He believed...'",
+          "Connect to their world: 'When someone is mean to you at school, the Prophet ﷺ once had something like that happen too...'",
+          "End with a du'a asking Allah to help them be like the Prophet ﷺ in some small way",
+          "Let children ask questions — 'Why did he do that?' is a sign the story is working",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What About Illustrations and Prophet Stories?",
+      },
+      {
+        type: "p",
+        text: "Islamic tradition holds that the faces of prophets should not be depicted. At NoorBedtime, all our illustrated Prophet Muhammad stories follow this principle — they feature beautiful environments, other characters, and symbolic imagery without ever depicting the Prophet's face. This keeps the stories Islamically sound while still being visually rich and engaging for children.",
+      },
+      {
+        type: "cta-box",
+        text: "Explore Prophet Muhammad stories and other prophet tales in our free library — all scholar-validated and free for every family.",
+        href: "/prophets/prophet-muhammad",
+        label: "Prophet Muhammad Stories →",
+      },
+      {
+        type: "faq",
+        questions: [
+          {
+            q: "At what age should children learn about Prophet Muhammad ﷺ?",
+            a: "From the earliest age — even toddlers can begin learning through simple stories about his kindness and gentleness. The complexity of the stories should grow with the child's age.",
+          },
+          {
+            q: "Can I show pictures of Prophet Muhammad in children's books?",
+            a: "The mainstream scholarly opinion in Sunni Islam is that it is not permissible to depict the faces of prophets. NoorBedtime follows this by creating beautiful illustrations that honor the stories without depicting prophetic faces.",
+          },
+          {
+            q: "What is the most important lesson from Prophet Muhammad's life for children?",
+            a: "That Islam is lived through character — through gentleness, honesty, gratitude, and love for Allah and people. The Prophet ﷺ embodied all of this, and children who know his stories have a lifelong model to look to.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "islamic-stories-about-gratitude-for-kids",
+    title: "Islamic Stories About Gratitude for Muslim Kids — Teaching Shukr Through Stories",
+    description:
+      "How to teach gratitude (shukr) to Muslim children using Islamic stories. The best stories about thankfulness from the Quran and Prophet traditions for kids aged 3–12.",
+    publishedAt: "2026-05-12",
+    keyword: "islamic stories about gratitude",
+    readingTimeMinutes: 6,
+    content: [
+      {
+        type: "p",
+        text: "Gratitude — shukr — is one of the most central concepts in Islam. The Quran mentions it hundreds of times. The Prophet Muhammad ﷺ described gratitude as half of faith. Yet teaching gratitude to children is notoriously difficult — until you use stories.",
+      },
+      {
+        type: "p",
+        text: "A child told to 'be grateful' may nod and move on. A child who hears the story of a tiny ant thanking Allah for a single crumb of food, or the story of a blind man who said 'Alhamdulillah' for every breath, begins to feel gratitude — and that feeling is the beginning of the habit.",
+      },
+      {
+        type: "h2",
+        text: "What the Quran Says About Gratitude for Children",
+      },
+      {
+        type: "p",
+        text: "The most powerful Quranic verse about gratitude is simple enough for a child to understand: 'If you are grateful, I will surely increase you' (Quran 14:7). This promise from Allah — that gratitude leads to more blessings — is a profound idea that children can grasp and remember. Pair it with a story that shows this principle in action, and it becomes unforgettable.",
+      },
+      {
+        type: "p",
+        text: "The story of Prophet Sulayman ﷺ is particularly powerful for teaching gratitude. Despite being given enormous wealth, power over animals, and the wind — blessings no human has had before or since — his first response was always 'Rabb awzi'ni an ashkura ni'mataka' (My Lord, enable me to be grateful for Your blessing). When the most blessed of kings teaches gratitude, children understand: no one is too blessed to say Alhamdulillah.",
+      },
+      {
+        type: "h2",
+        text: "Best Islamic Gratitude Stories by Age",
+      },
+      {
+        type: "h3",
+        text: "Ages 3–5: Concrete, Everyday Gratitude",
+      },
+      {
+        type: "ul",
+        items: [
+          "Little Ant's Big Thank You — tiny creature, giant gratitude lesson",
+          "The boy who shared his last date — finding joy in giving, not just receiving",
+          "Stories that end with 'Alhamdulillah' becoming a habit, not just a word",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Ages 6–8: Gratitude Under Difficulty",
+      },
+      {
+        type: "ul",
+        items: [
+          "Prophet Yusuf's gratitude even in the dungeon and the slave market",
+          "The Prophet Muhammad's ﷺ gratitude during the years of hardship in Mecca",
+          "Stories of Islamic scholars who were grateful for poverty because it brought them closer to Allah",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Ages 9–12: Gratitude as a Worldview",
+      },
+      {
+        type: "ul",
+        items: [
+          "Prophet Sulayman's du'a of gratitude despite having every worldly blessing",
+          "The hadith on counting blessings: 'Look to those below you, not those above you'",
+          "Stories of Muslim travelers and explorers who saw the world and said 'Subhanallah'",
+        ],
+      },
+      {
+        type: "h2",
+        text: "5 Ways to Build a Gratitude Practice With Stories",
+      },
+      {
+        type: "ol",
+        items: [
+          "End each bedtime story with: 'What's one thing you want to say Alhamdulillah for today?'",
+          "Keep a 'Alhamdulillah jar' — children write blessings on paper and add them weekly",
+          "When something good happens, say 'Alhamdulillah' visibly and explain why",
+          "When something hard happens, model saying 'Alhamdulillah ala kull hal' (thankful in all circumstances)",
+          "Revisit gratitude stories during Ramadan — the connection between fasting and gratitude is deep",
+        ],
+      },
+      {
+        type: "cta-box",
+        text: "Explore our Islamic stories about gratitude, patience, and character — all free, all scholar-validated.",
+        href: "/themes/gratitude",
+        label: "Gratitude Stories →",
+      },
+      {
+        type: "faq",
+        questions: [
+          {
+            q: "How do I teach a toddler about Islamic gratitude?",
+            a: "Focus on the word and action before the concept. Say 'Alhamdulillah' often and visibly. 'We got to eat breakfast today — Alhamdulillah!' Story-time is perfect because children are relaxed and receptive. Gratitude stories for 3–5 year olds should be concrete, simple, and warm.",
+          },
+          {
+            q: "What is the Arabic word for gratitude in Islam?",
+            a: "Shukr (شكر) is the Islamic concept of gratitude, and Alhamdulillah (الحمد لله) — meaning 'All praise is due to Allah' — is its most common expression. These are among the first Islamic concepts children learn.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "muslim-bedtime-routine-for-children",
+    title: "How to Build a Muslim Bedtime Routine That Actually Sticks",
+    description:
+      "A practical guide to building a consistent Islamic bedtime routine for Muslim children — including du'as, stories, and habits that make bedtime peaceful and spiritually meaningful.",
+    publishedAt: "2026-05-15",
+    keyword: "muslim bedtime routine",
+    readingTimeMinutes: 7,
+    content: [
+      {
+        type: "p",
+        text: "Every Muslim parent knows bedtime should include du'a. Most know about Ayat al-Kursi and the three Quls. But knowing it and making it a consistent, joyful habit are two very different things.",
+      },
+      {
+        type: "p",
+        text: "The difference between a routine that sticks and one that fades after three nights comes down to one thing: does your child look forward to it? This guide is about building a Muslim bedtime routine that your child will actually want to follow — night after night.",
+      },
+      {
+        type: "h2",
+        text: "The 5-Element Muslim Bedtime Routine",
+      },
+      {
+        type: "ol",
+        items: [
+          "Wind-Down Signal — Something consistent that tells the body 'bedtime is coming': dim lights, quiet voices, changing into pajamas with Bismillah",
+          "Wudu (for older children) or washing face/hands — the physical act of cleanliness connects to purity before sleep",
+          "Evening Du'as — Ayat al-Kursi, the three Quls (Al-Ikhlas, Al-Falaq, An-Nas), and the sleep du'a (Allahumma bismika amutu wa ahya)",
+          "Islamic Story — one story, 10–20 minutes, that gives the night a meaningful close",
+          "A Family Moment — parent says 'I love you, may Allah protect you tonight' in their own words",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why the Order Matters",
+      },
+      {
+        type: "p",
+        text: "Putting the story after du'a (not before) is deliberate. The du'as anchor the spiritual foundation, then the story deepens it. If the story comes first, children may fall asleep before the du'as — and you've lost the moment. Story → sleepy child is a one-way door.",
+      },
+      {
+        type: "h2",
+        text: "Age-Specific Tips for Each Stage",
+      },
+      {
+        type: "h3",
+        text: "Ages 2–4: Start Simple, Make It Sensory",
+      },
+      {
+        type: "p",
+        text: "Young children love repetition and ritual. Pick one du'a to focus on — the sleep du'a is perfect. Say it the same way every night. Add a physical gesture (hands together, eyes closed). For stories, choose ones with simple moral lessons and warm, familiar characters.",
+      },
+      {
+        type: "h3",
+        text: "Ages 5–8: Add the Three Quls",
+      },
+      {
+        type: "p",
+        text: "This is the age when children's memories are most receptive. The three Quls are short and melodic — most children memorize them naturally within weeks if heard every night. Add brief explanations over time: 'Al-Ikhlas tells us Allah is One and has no partners.' Stories at this age can be longer and involve moral dilemmas.",
+      },
+      {
+        type: "h3",
+        text: "Ages 9–12: Make It Theirs",
+      },
+      {
+        type: "p",
+        text: "Preteens often resist routines they feel imposed upon them. The solution is ownership. Let them choose the story. Let them lead the du'as. Let them pick a new du'a to memorize each month. Stories with complex characters and real moral choices are ideal.",
+      },
+      {
+        type: "h2",
+        text: "What to Do When the Routine Breaks",
+      },
+      {
+        type: "p",
+        text: "It will break. Travel, illness, late nights, tired parents — routines are interrupted. The key is resuming without guilt or fanfare. Don't say 'We haven't done this in a week, we need to get back on track.' Just do it, quietly, as if it never stopped. Children follow your lead.",
+      },
+      {
+        type: "h2",
+        text: "The Role of Stories in the Routine",
+      },
+      {
+        type: "p",
+        text: "The bedtime story is the centerpiece of the routine — not because it's the most Islamic element, but because it's the element children love most. When they love the story, they want the routine. And when they want the routine, the du'as and the wudu come along for the ride.",
+      },
+      {
+        type: "p",
+        text: "Choose stories that are short enough to finish before sleep, beautiful enough to make children look forward to them, and grounded enough in Islamic values to leave something meaningful behind when the lights go out.",
+      },
+      {
+        type: "cta-box",
+        text: "Browse 50+ illustrated Islamic bedtime stories — sorted by age, theme, and reading time. Perfect for your nightly routine.",
+        href: "/library",
+        label: "Find Tonight's Story →",
+      },
+      {
+        type: "faq",
+        questions: [
+          {
+            q: "What du'a should Muslim children say before sleeping?",
+            a: "The primary sleep du'a is: 'Allahumma bismika amutu wa ahya' (O Allah, in Your name I die and I live). Ayat al-Kursi (Quran 2:255) and the three Quls (Al-Ikhlas, Al-Falaq, An-Nas) are also strongly recommended before sleep, based on authentic hadith.",
+          },
+          {
+            q: "How do I get my child to memorize Ayat al-Kursi?",
+            a: "Repetition at bedtime is the most effective method — children memorize through hearing, not drilling. Say it clearly every night for 2–3 months and most children will have it memorized naturally. You can also break it into smaller phrases over several weeks.",
+          },
+          {
+            q: "How long should a Muslim children's bedtime story be?",
+            a: "For ages 3–5, 10 minutes is ideal. For ages 6–8, 15 minutes. For ages 9–12, up to 20 minutes. The goal is to finish the story while children are still awake — ending a story after they've fallen asleep reduces its impact.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "quran-stories-for-toddlers",
+    title: "Quran Stories for Toddlers — Where to Start (Ages 2–5 Guide)",
+    description:
+      "A gentle guide for Muslim parents on introducing Quran stories to toddlers. The best starting stories, how to keep little ones engaged, and what to say when they ask big questions.",
+    publishedAt: "2026-05-19",
+    keyword: "quran stories for toddlers",
+    readingTimeMinutes: 5,
+    content: [
+      {
+        type: "p",
+        text: "Your toddler won't understand why Surah Yusuf is a masterpiece of narrative. They won't grasp the legal wisdom in Surah Al-Baqarah. But they absolutely can understand a story about a boy named Yusuf who was thrown into a well by his brothers and still trusted Allah — and come away with something that will shape them for life.",
+      },
+      {
+        type: "p",
+        text: "Quran stories for toddlers are not about comprehension. They are about planting seeds. The goal is for your child to grow up with these stories already in their heart, ready to grow deeper meaning as they get older.",
+      },
+      {
+        type: "h2",
+        text: "Where to Start: The 3 Best First Quran Stories for Toddlers",
+      },
+      {
+        type: "ol",
+        items: [
+          "The story of the little birds — simple, visual, full of wonder. Allah cares for every creature, even the tiniest bird. Toddlers love animals and respond instantly to this.",
+          "The story of Prophet Ibrahim ﷺ as a boy — his curiosity, his questions about the stars and the moon, his discovery of tawheed. Young children are naturally curious and see themselves in young Ibrahim.",
+          "The boy who shared his last date — not a Quranic narrative but deeply rooted in Prophetic tradition, teaches generosity in a language toddlers understand: food, sharing, warmth.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "How to Tell Quran Stories to a Toddler",
+      },
+      {
+        type: "p",
+        text: "The method matters as much as the story. Toddlers need voice, pace, and face. They watch your eyes and expression as much as they listen to your words.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Slow down. Toddlers process slower than you think. Pause for effect.",
+          "Use your voice. Whisper the scary parts, get excited at the happy ending.",
+          "Name the emotion. 'And Yusuf felt very sad when his brothers left him...' — emotion words build empathy.",
+          "Invite participation. 'What do you think the bird did next?' keeps attention.",
+          "Repeat stories often. Toddlers love the familiar. A story heard 10 times sinks in 10 times deeper.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What Not to Worry About",
+      },
+      {
+        type: "p",
+        text: "Do not worry if your toddler doesn't 'get' the moral lesson. They will. Not tonight — but over months and years, as the story becomes part of their vocabulary. Do not worry if they interrupt with questions or change the subject. Story time at this age is inherently messy. The goal is warmth, love, and a positive association with Islamic stories.",
+      },
+      {
+        type: "p",
+        text: "Do not worry if you are not a scholar. You don't need to be. You need to love the stories yourself — and tell them with that love. Children feel it.",
+      },
+      {
+        type: "h2",
+        text: "When Toddlers Ask Big Questions",
+      },
+      {
+        type: "p",
+        text: "After a Quran story, a toddler might ask: 'Where is Allah?' or 'Why did Allah let that happen?' These are precious moments. The honest, age-appropriate answer is almost always: 'Allah is closer to you than anything you can see. He loves you so much that even when things feel scary, He is always taking care of you.' That is enough for a toddler. More than enough.",
+      },
+      {
+        type: "cta-box",
+        text: "Browse our Little Stars collection — 10-minute Islamic stories designed specifically for Muslim children aged 3–5.",
+        href: "/ages/3-5",
+        label: "Little Stars Stories →",
+      },
+      {
+        type: "faq",
+        questions: [
+          {
+            q: "At what age can children understand Quran stories?",
+            a: "From age 2–3, children can engage with simplified Quran stories that focus on concrete, sensory elements and simple emotions. Deep comprehension develops gradually — the goal in toddlerhood is warmth and familiarity, not understanding.",
+          },
+          {
+            q: "Do Quran stories for toddlers need to be accurate?",
+            a: "The core events and characters should be accurate. It is fine to simplify language and focus on emotional truth rather than every historical detail. NoorBedtime stories cite their Quranic sources and are reviewed for Islamic accuracy.",
+          },
+          {
+            q: "Should I read Quran stories in Arabic with a toddler?",
+            a: "A short Quranic phrase — like Bismillah or Alhamdulillah — heard regularly builds connection. But the story itself should be in the language your child understands. The goal is meaning and love for the Quran, not rote Arabic at this stage.",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export function getAllPosts(): BlogPost[] {

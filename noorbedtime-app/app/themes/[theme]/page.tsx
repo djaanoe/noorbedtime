@@ -100,7 +100,7 @@ export default function ThemePage({ params }: Props) {
 
           <div className="mt-16 bg-navy-lighter rounded-2xl border border-gray-700/30 p-8 text-center">
             <p className="text-gray-400 text-sm mb-4">
-              Explore all 50+ Islamic bedtime stories across 27 values and themes.
+              All 50+ Islamic bedtime stories are free — explore every value and theme with no account needed.
             </p>
             <Link
               href="/library"
@@ -109,11 +109,11 @@ export default function ThemePage({ params }: Props) {
               ← Browse all stories
             </Link>
             <Link
-              href="/credits"
+              href="/donate"
               className="inline-block bg-gold text-navy font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-gold-light transition-colors"
               style={{ fontFamily: "Outfit, sans-serif" }}
             >
-              Unlock All Stories — $4.99
+              ❤️ Support NoorBedtime — It&apos;s Free Forever
             </Link>
           </div>
         </div>

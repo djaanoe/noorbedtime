@@ -108,11 +108,6 @@ export default async function StoryPage({ params }: Props) {
                   className="object-cover"
                   priority
                 />
-                {story.is_free && (
-                  <div className="absolute top-3 left-3 bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">
-                    FREE
-                  </div>
-                )}
               </div>
             </div>
 
@@ -149,23 +144,13 @@ export default async function StoryPage({ params }: Props) {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 mb-8">
-                {story.is_free ? (
-                  <Link
-                    href={`/read/${slug}`}
-                    className="flex-1 bg-gold text-navy font-bold text-center py-3 rounded-xl hover:bg-gold-light transition-colors"
-                    style={{ fontFamily: "Outfit, sans-serif" }}
-                  >
-                    Read Free Story →
-                  </Link>
-                ) : (
-                  <Link
-                    href="/credits"
-                    className="flex-1 cta-glow bg-gold text-navy font-bold text-center py-3 rounded-xl hover:bg-gold-light transition-colors"
-                    style={{ fontFamily: "Outfit, sans-serif" }}
-                  >
-                    Unlock All Stories — $4.99
-                  </Link>
-                )}
+                <Link
+                  href={`/read/${slug}`}
+                  className="flex-1 bg-gold text-navy font-bold text-center py-3 rounded-xl hover:bg-gold-light transition-colors"
+                  style={{ fontFamily: "Outfit, sans-serif" }}
+                >
+                  Read Story →
+                </Link>
               </div>
 
               <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-gray-500">
@@ -221,17 +206,16 @@ export default async function StoryPage({ params }: Props) {
                 </div>
               ))}
             </div>
-            {!story.is_free && (
-              <div className="mt-4 text-center py-8 border border-dashed border-gray-700 rounded-xl">
-                <p className="text-gray-500 text-sm mb-3">Unlock all 50+ stories for a one-time payment</p>
-                <Link
-                  href="/credits"
-                  className="inline-block cta-glow bg-gold text-navy font-bold px-6 py-2.5 rounded-xl hover:bg-gold-light transition-colors text-sm"
-                >
-                  Get Lifetime Access — $4.99
-                </Link>
-              </div>
-            )}
+            <div className="mt-4 text-center py-6 border border-dashed border-gold/20 rounded-xl bg-gold/5">
+              <p className="text-gray-400 text-sm mb-3">All 50+ stories are free — no account needed.</p>
+              <Link
+                href={`/read/${slug}`}
+                className="inline-block bg-gold text-navy font-bold px-6 py-2.5 rounded-xl hover:bg-gold-light transition-colors text-sm"
+                style={{ fontFamily: "Outfit, sans-serif" }}
+              >
+                Read Full Story →
+              </Link>
+            </div>
           </div>
           {/* Related stories */}
           {relatedStories.length > 0 && (

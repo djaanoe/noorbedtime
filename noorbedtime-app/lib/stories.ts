@@ -160,3 +160,9 @@ export function getStoriesByProphet(prophetSlug: string): Story[] {
     )
   );
 }
+
+export function getStoriesByReadingTime(minMin: number, maxMin: number): Story[] {
+  return getAllStories().filter(
+    (s) => s.reading_time_minutes >= minMin && s.reading_time_minutes <= maxMin
+  );
+}

@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/", "/account", "/auth"],
+      disallow: ["/api/"],
     },
     sitemap: "https://noorbedtime.com/sitemap.xml",
   };

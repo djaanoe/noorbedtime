@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s | NoorBedtime",
   },
   description:
-    "Beautiful bedtime stories for Muslim children aged 3-12. Scholar-validated tales inspired by the Quran and Prophet traditions. 5 free stories — start reading tonight.",
+    "Beautiful bedtime stories for Muslim children aged 3-12. Scholar-validated tales inspired by the Quran and Prophet traditions. All 50+ stories free — start reading tonight.",
   keywords: [
     "Islamic bedtime stories",
     "Muslim kids stories",
@@ -37,6 +37,13 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
+        {process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID && (
+          <Script
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID}`}
+            strategy="afterInteractive"
+            crossOrigin="anonymous"
+          />
+        )}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-44748M67ZC"
           strategy="afterInteractive"

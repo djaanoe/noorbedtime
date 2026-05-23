@@ -16,13 +16,13 @@ export default function Navbar() {
             <Link href="/library" className="text-gray-300 hover:text-gold text-xs font-medium px-3 py-1 transition-colors">
               Library
             </Link>
-            <Link href="/credits" className="text-gold text-xs font-semibold border border-gold/40 px-3 py-1 rounded-full hover:bg-gold/10 transition-colors">
-              Unlock Stories
+            <Link href="/blog" className="text-gray-300 hover:text-gold text-xs font-medium px-3 py-1 transition-colors">
+              Blog
+            </Link>
+            <Link href="/donate" className="text-gold text-xs font-semibold border border-gold/40 px-3 py-1 rounded-full hover:bg-gold/10 transition-colors">
+              ❤️ Donate
             </Link>
           </div>
-          <Link href="/auth" className="bg-gold text-navy text-xs font-bold px-4 py-1.5 rounded-full hover:bg-gold-light transition-colors">
-            Sign In
-          </Link>
           <button
             className="sm:hidden text-gray-400 hover:text-gold"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -41,8 +41,8 @@ export default function Navbar() {
       {menuOpen && (
         <div className="sm:hidden bg-navy-light border-t border-gray-800 px-4 py-3 flex flex-col gap-2">
           <Link href="/library" className="text-gray-300 hover:text-gold text-sm py-1" onClick={() => setMenuOpen(false)}>Library</Link>
-          <Link href="/credits" className="text-gold text-sm py-1" onClick={() => setMenuOpen(false)}>Unlock Stories</Link>
-          <Link href="/account" className="text-gray-300 hover:text-gold text-sm py-1" onClick={() => setMenuOpen(false)}>Account</Link>
+          <Link href="/blog" className="text-gray-300 hover:text-gold text-sm py-1" onClick={() => setMenuOpen(false)}>Blog</Link>
+          <Link href="/donate" className="text-gold text-sm py-1" onClick={() => setMenuOpen(false)}>❤️ Donate</Link>
         </div>
       )}
     </nav>
