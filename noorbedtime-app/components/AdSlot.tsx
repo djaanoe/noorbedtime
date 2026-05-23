@@ -2,7 +2,8 @@
 import { useEffect } from "react";
 
 interface Props {
-  id: string;
+  id: string;       // HTML element id (for targeting / layout)
+  slotId?: string;  // AdSense numeric unit ID — get from AdSense dashboard → Ad units
   className?: string;
   format?: "rectangle" | "banner" | "in-article";
 }
@@ -13,17 +14,17 @@ declare global {
   }
 }
 
-export default function AdSlot({ id, className = "", format = "rectangle" }: Props) {
-  const clientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID;
+const CLIENT_ID = "ca-pub-4772774051728006";
 
+export default function AdSlot({ id, slotId, className = "", format = "rectangle" }: Props) {
   useEffect(() => {
-    if (!clientId) return;
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
     } catch {}
-  }, [clientId]);
+  }, []);
 
-  if (!clientId) {
+  // Dev: show placeholder
+  if (process.env.NODE_ENV === "development") {
     return (
       <div
         id={id}
@@ -31,7 +32,7 @@ export default function AdSlot({ id, className = "", format = "rectangle" }: Pro
           format === "banner" ? "h-16 w-full" : "h-[250px] w-full"
         } ${className}`}
       >
-        Ad Slot [{id}]
+        Ad Slot [{id}]{slotId ? ` · unit ${slotId}` : " · no unit ID yet"}
       </div>
     );
   }
@@ -41,8 +42,8 @@ export default function AdSlot({ id, className = "", format = "rectangle" }: Pro
       <ins
         className="adsbygoogle"
         style={{ display: "block" }}
-        data-ad-client={clientId}
-        data-ad-slot={id}
+        data-ad-client={CLIENT_ID}
+        {...(slotId ? { "data-ad-slot": slotId } : {})}
         data-ad-format={format === "in-article" ? "fluid" : "auto"}
         data-full-width-responsive="true"
       />
