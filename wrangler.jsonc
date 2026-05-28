@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "noorbedtime",
+  "compatibility_date": "2026-05-28",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "landing-page"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
